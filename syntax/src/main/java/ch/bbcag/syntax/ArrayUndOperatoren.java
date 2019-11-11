@@ -1,4 +1,4 @@
-package ch.bbcag.ae.ersteschritte;
+package ch.bbcag.syntax;
 
 import java.util.Arrays;
 
