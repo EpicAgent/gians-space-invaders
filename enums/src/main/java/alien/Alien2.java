@@ -11,12 +11,7 @@ public class Alien2 {
         } else {
             System.out.println("My gender is other.");
         }
-
-        //TODO
-
     }
-
-    //TODO: Write getters and setters for gender
 
     public Gender getGender() {
         return gender;
