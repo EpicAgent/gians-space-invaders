@@ -1,0 +1,23 @@
+package quiz.teil2;
+
+public class Answer {
+    private String answerText;
+    private boolean isCorrect;
+
+    public boolean isCorrect() {
+        return isCorrect;
+    }
+
+    public void isCorrect(boolean correct) {
+        isCorrect = correct;
+    }
+
+    public String getAnswerText() {
+        return answerText;
+    }
+
+    public void setAnswerText(String answerText) {
+        this.answerText = answerText;
+    }
+
+}
