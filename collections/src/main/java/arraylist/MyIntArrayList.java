@@ -2,13 +2,13 @@ package arraylist;
 
 import com.sun.org.apache.xpath.internal.operations.String;
 
-public class MyArrayList {
+public class MyIntArrayList {
     private static final int DEFAULT_ARRAY_SIZE = 10;
     private int[] numbers = new int[DEFAULT_ARRAY_SIZE];
     private int size = 0;
 
     public void add(int number) {
-        if (size == numbers.length && size > 0) {
+        if (size == numbers.length) {
             grow();
         }
         numbers[size] = number;

@@ -1,12 +1,12 @@
 package arraylist;
 
-public class MyArrayList2<T> {
+public class MyGenericArrayList<T> {
     private static final int DEFAULT_ARRAY_SIZE = 10;
     private Object[] objects = new Object[DEFAULT_ARRAY_SIZE];
     private int size = 0;
 
     public void add(T object) {
-        if (size == objects.length && size > 0) {
+        if (size == objects.length) {
             grow();
         }
         objects[size] = object;
@@ -19,7 +19,7 @@ public class MyArrayList2<T> {
         }
         return (T) objects[index];
     }
-    
+
     public T[] toArray() {
         Object[] resultArray = new Object[size];
         for (int i = 0; i < size; i++) {
@@ -29,7 +29,7 @@ public class MyArrayList2<T> {
     }
 
 
-    public int size() {
+    public int getSize() {
         return size;
     }
 
