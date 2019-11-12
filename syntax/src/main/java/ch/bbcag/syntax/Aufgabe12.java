@@ -2,8 +2,7 @@ package ch.bbcag.syntax;
 
 import java.util.Arrays;
 
-public class DatentypenUndVariableninitialisierungArray {
-
+public class Aufgabe12 {
     public static void main(String[] args) {
         // a
         int[] foo = {
@@ -21,5 +20,8 @@ public class DatentypenUndVariableninitialisierungArray {
             bar[i] = i;
         }
         System.out.println(Arrays.toString(bar));
+
+        // TODO
     }
+
 }

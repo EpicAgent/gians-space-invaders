@@ -2,8 +2,7 @@ package ch.bbcag.syntax;
 
 import javax.swing.*;
 
-public class KleinerRechner {
-
+public class Aufgabe10 {
     public static void main(String[] args) {
 
         double zahl1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Zahl 1:"));
@@ -33,7 +32,5 @@ public class KleinerRechner {
         }
 
         System.out.println("Das Resultat ist: " + result);
-
     }
-
 }
