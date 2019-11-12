@@ -1,7 +1,10 @@
 package arraylist;
 
 
-public class IntArrayList {
+import arraylist.interfaces.IIntList;
+
+
+public class IntArrayList implements IIntList {
     private static final int DEFAULT_ARRAY_SIZE = 10;
     private int[] numbers = new int[DEFAULT_ARRAY_SIZE];
     private int size = 0;
@@ -12,6 +15,15 @@ public class IntArrayList {
         }
         numbers[size] = number;
         size++;
+    }
+
+    public boolean contains(int number) {
+        for (int i = 0; i < size; i++) {
+            if (numbers[i] == number) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public int get(int index) {
@@ -29,7 +41,7 @@ public class IntArrayList {
         return resultArray;
     }
 
-    public int getSize() {
+    public int size() {
         return size;
     }
 

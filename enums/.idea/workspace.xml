@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be0ebb6-7dab-4dbb-8251-24e8a442f577" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../collections/src/main/java/arraylist/LottoGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collections/src/main/java/arraylist/interfaces/IIntCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collections/src/main/java/arraylist/interfaces/IIntList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collections/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../collections/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collections/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../collections/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collections/src/main/java/arraylist/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collections/src/main/java/arraylist/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collections/src/main/java/arraylist/IntArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collections/src/main/java/arraylist/IntArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,6 +132,7 @@
       <workItem from="1573204310917" duration="14364000" />
       <workItem from="1573468525261" duration="614000" />
       <workItem from="1573476310530" duration="3374000" />
+      <workItem from="1573571752135" duration="1051000" />
     </task>
     <servers />
   </component>
@@ -136,7 +144,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
