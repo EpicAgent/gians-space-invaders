@@ -1,7 +1,7 @@
 package arraylist;
 
 
-public class MyIntArrayList {
+public class IntArrayList {
     private static final int DEFAULT_ARRAY_SIZE = 10;
     private int[] numbers = new int[DEFAULT_ARRAY_SIZE];
     private int size = 0;

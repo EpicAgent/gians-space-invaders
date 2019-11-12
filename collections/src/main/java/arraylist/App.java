@@ -8,7 +8,7 @@ public class App {
 
     private static void useIntArrayList() {
         System.out.println("Int Array List");
-        MyIntArrayList myArrayList = new MyIntArrayList();
+        IntArrayList myArrayList = new IntArrayList();
         for (int i = 0; i < 100; i++) {
             myArrayList.add(i);
         }
@@ -20,7 +20,7 @@ public class App {
 
     private static void useGenericArrayList() {
         System.out.println("Generic Array List");
-        MyGenericArrayList<Integer> myArrayList = new MyGenericArrayList<>();
+        GenericArrayList<Integer> myArrayList = new GenericArrayList<>();
         for (int i = 0; i < 100; i++) {
             myArrayList.add(i);
         }

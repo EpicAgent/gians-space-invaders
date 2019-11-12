@@ -1,6 +1,6 @@
 package arraylist;
 
-public class MyGenericArrayList<T> {
+public class GenericArrayList<T> {
     private static final int DEFAULT_ARRAY_SIZE = 10;
     private Object[] objects = new Object[DEFAULT_ARRAY_SIZE];
     private int size = 0;
