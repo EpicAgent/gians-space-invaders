@@ -1,6 +1,5 @@
 package arraylist;
 
-import com.sun.org.apache.xpath.internal.operations.String;
 
 public class MyIntArrayList {
     private static final int DEFAULT_ARRAY_SIZE = 10;
