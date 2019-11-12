@@ -1,7 +1,6 @@
 package ch.bbcag.syntax;
 
-public class Quadratzahlen {
-
+public class Aufgabe7 {
     public static void main(String[] args) {
         for (int i = 1; i <= 25; ++i) {
             int result = (int) Math.pow(i, 2);

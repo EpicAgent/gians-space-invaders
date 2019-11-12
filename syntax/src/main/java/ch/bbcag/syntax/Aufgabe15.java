@@ -3,8 +3,7 @@ package ch.bbcag.syntax;
 import java.util.Arrays;
 import java.util.Random;
 
-public class ZahlenArray {
-
+public class Aufgabe15 {
     public static void main(String[] args) {
         // a
         Random randomGenerator = new Random();
@@ -68,5 +67,4 @@ public class ZahlenArray {
 
         return result;
     }
-
 }

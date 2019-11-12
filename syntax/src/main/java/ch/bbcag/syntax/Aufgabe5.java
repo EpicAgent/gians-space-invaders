@@ -2,8 +2,7 @@ package ch.bbcag.syntax;
 
 import javax.swing.*;
 
-public class EingabebedingteAusgabe {
-
+public class Aufgabe5 {
     public static void main(String[] args) {
         int zahl = Integer.parseInt(JOptionPane.showInputDialog(null, "Bitte Zahl eingeben"));
 
