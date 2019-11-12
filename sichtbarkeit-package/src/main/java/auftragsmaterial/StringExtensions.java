@@ -11,10 +11,18 @@ public class StringExtensions {
     }
 
     static String reverse(String text){
-        return ""; // TODO
+        String reversedText = "";
+        for (int i = 0; i < text.length() ; i++) {
+            reversedText = text.charAt(i) + reversedText;
+        }
+        return reversedText;
     }
 
-    private static int sumOfTheDigits(String value) {
-        return 0; // TODO
+    static int sumOfTheDigits(String value) {
+        int result = 0;
+        for ( int i = 0; i < value.length(); i++ )
+            result += (value.charAt( i ) - '0');
+
+        return result;
     }
 }
