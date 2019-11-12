@@ -1,5 +1,6 @@
-public class Point {
+package klassen;
 
+public class Point {
     private static int x;
     private static int y;
 
@@ -13,19 +14,16 @@ public class Point {
         System.out.println(x + "," + y);
     }
 
-    private static int getX() {
+    public static int getX(){
         return x;
     }
-
-    private static int getY() {
-        return y;
-    }
-
-    private static void setX(int x) {
+    public static void setX(int x){
         Point.x = x;
     }
-
-    private static void setY(int y) {
+    public static int getY(){
+        return y;
+    }
+    public static void setY(int y){
         Point.y = y;
     }
 }
