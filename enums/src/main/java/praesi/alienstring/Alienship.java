@@ -1,24 +1,24 @@
-package praesi;
+package praesi.alienstring;
 
-public class Alienship2 {
+public class Alienship {
     private static final int SPEED = 10;
-    private int currentDirection = 0;
+    private String currentDirection = "right";
     private int xPosition = 0;
 
     public void moveInCurrentDirection() {
-        if (currentDirection == 1) {
+        if (currentDirection.equals("right")) {
             xPosition += SPEED;
         }
-        if (currentDirection == -1) {
+        if (currentDirection.equals("left")) {
             xPosition -= SPEED;
         }
     }
 
-    public int getCurrentDirection() {
+    public String getCurrentDirection() {
         return currentDirection;
     }
 
-    public void setCurrentDirection(int currentDirection) {
+    public void setCurrentDirection(String currentDirection) {
         this.currentDirection = currentDirection;
     }
 }

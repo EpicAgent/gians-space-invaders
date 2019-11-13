@@ -1,6 +1,8 @@
-package praesi;
+package praesi.alienenum;
 
-public class Alienship3 {
+import praesi.alienenum.Direction;
+
+public class Alienship {
     private static final int SPEED = 10;
     private Direction currentDirection = Direction.RIGHT;
     private int xPosition = 0;
