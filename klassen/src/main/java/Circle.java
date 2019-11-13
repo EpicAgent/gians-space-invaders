@@ -7,12 +7,10 @@ public class Circle {
     public static void main(String[] args) {
         int radius = 5;
         double area = calculateArea(radius);
-        String areaAsString = Double.toString(area);
-        System.out.println("Kreisfläche bei Radius 5 cm: " + areaAsString + "cm");
+        System.out.println("Kreisfläche bei Radius 5 cm: " + area + "cm");
 
         double circumference = calculateCircumference(radius);
-        String circumferenceAsString = Double.toString(circumference);
-        System.out.println("Kreisumfang Radius 5cm: " + circumferenceAsString + "cm");
+        System.out.println("Kreisumfang Radius 5cm: " + circumference + "cm");
     }
 
     static double calculateArea(int radius) {

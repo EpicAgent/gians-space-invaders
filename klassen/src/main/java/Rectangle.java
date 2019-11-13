@@ -4,21 +4,19 @@ public class Rectangle {
 
     public static void main(String[] args) {
         double area = calculateArea(4, 4);
-        String areaAsString = Double.toString(area);
-        System.out.println("Flaeche: " + areaAsString + "cm");
+        System.out.println("Flaeche: " + area + "cm");
 
         double circumference = calculateCircumference(4, 4);
-        String circumferenceAsString = Double.toString(circumference);
-        System.out.println("Umfang: " + circumferenceAsString + "cm");
+        System.out.println("Umfang: " + circumference + "cm");
     }
 
-    static double calculateArea(int width, int height) {
+    static double calculateArea(double width, double height) {
         double area = width * height;
         return area;
     }
 
     static double calculateCircumference(int width, int height) {
-        double circumference = 2 * width * height;
+        double circumference = (2 * width) + (2 * height);
         return circumference;
     }
 }
