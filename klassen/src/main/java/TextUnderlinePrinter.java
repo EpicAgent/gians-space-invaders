@@ -1,5 +1,3 @@
-package klassen;
-
 public class TextUnderlinePrinter {
 
     public static void main(String[] args) {

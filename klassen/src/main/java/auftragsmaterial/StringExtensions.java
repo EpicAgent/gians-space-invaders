@@ -1,4 +1,4 @@
-package klassen.auftragsmaterial;
+package auftragsmaterial;
 
 public class StringExtensions {
 

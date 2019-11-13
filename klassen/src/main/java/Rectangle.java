@@ -1,12 +1,10 @@
-package klassen;
-
 public class Rectangle {
 
     public static void main(String[] args) {
-        double area = calculateArea(4, 4);
+        double area = calculateArea(4, 5);
         System.out.println("Flaeche: " + area + "cm");
 
-        double circumference = calculateCircumference(4, 4);
+        double circumference = calculateCircumference(4, 5);
         System.out.println("Umfang: " + circumference + "cm");
     }
 

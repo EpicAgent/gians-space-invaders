@@ -1,4 +1,4 @@
-package klassen.auftragsmaterial;
+package auftragsmaterial;
 
 import java.util.Arrays;
 import java.util.Random;

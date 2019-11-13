@@ -1,5 +1,3 @@
-package klassen;
-
 public class BbcMath {
 
     public static void main(String[] args) {

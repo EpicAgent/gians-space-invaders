@@ -1,5 +1,3 @@
-package klassen;
-
 public class Point {
     private static int x;
     private static int y;

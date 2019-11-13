@@ -1,5 +1,3 @@
-package klassen;
-
 public class StringExtensions {
 
     public static void main(String[] args) {
