@@ -1,6 +1,5 @@
 public class Circle {
 
-    static final double PI = 3.14;
 
     public static void main(String[] args) {
         int radius = 5;
@@ -12,12 +11,12 @@ public class Circle {
     }
 
     static double calculateArea(int radius) {
-        double area = PI * (radius * radius);
+        double area = Math.PI * (radius * radius);
         return area;
     }
 
     static double calculateCircumference(int radius) {
-        double circumference = 2 * radius * radius;
+        double circumference = 2 * radius * Math.PI;
         return circumference;
     }
 }
