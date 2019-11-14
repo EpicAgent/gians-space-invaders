@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be0ebb6-7dab-4dbb-8251-24e8a442f577" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../collections/src/main/java/arrays/praesi/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../collections/src/main/java/arrays/praesi/LottoGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/alienkonstante/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/car/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/car/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/praesi/Alienship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praesi/alienstring/Alienship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/praesi/Alienship2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praesi/alienkonstante/Alienship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/praesi/Alienship3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praesi/alienenum/Alienship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/praesi/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praesi/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/praesi/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/praesi/alienenum/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../konstruktoren/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../konstruktoren/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../konstruktoren/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../konstruktoren/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../konstruktoren/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +132,7 @@
       <workItem from="1573571752135" duration="1409000" />
       <workItem from="1573636481646" duration="29000" />
       <workItem from="1573650293296" duration="2573000" />
+      <workItem from="1573728476080" duration="10000" />
     </task>
     <servers />
   </component>

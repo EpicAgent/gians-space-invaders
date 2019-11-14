@@ -1,3 +1,5 @@
+package konstruktoren;
+
 public class SomeApp {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package konstruktoren;
+
 public class SomeClass {
 
     private int variableInt;
