@@ -1,4 +1,6 @@
-package geometry;
+package app;
+
+import geometry.Line;
 
 public class LineApp {
 

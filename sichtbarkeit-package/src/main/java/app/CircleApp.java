@@ -1,4 +1,6 @@
-package geometry;
+package app;
+
+import geometry.Circle;
 
 // Default-Package
 public class CircleApp {
