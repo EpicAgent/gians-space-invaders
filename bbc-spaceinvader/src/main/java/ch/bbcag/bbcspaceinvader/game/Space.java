@@ -11,6 +11,7 @@ import ch.bbcag.bbcspaceinvader.game.gameobjects.GameObject;
 import ch.bbcag.bbcspaceinvader.game.gameobjects.Spaceship;
 import javafx.animation.AnimationTimer;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.image.Image;
 
 
 @SuppressWarnings("serial")
@@ -19,6 +20,7 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 	private KeyEventHandler keyEventHandler;
 	private GraphicsContext gc;
 	private CollisionHandler collisionHandler = new CollisionHandler(this);
+	private Image backgroundImage = new Image(this.getClass().getResourceAsStream("/BackgroundGame.png"));
 	
 	private long lastTimeInNanoSec;
 	private Navigator navigator;
@@ -31,8 +33,8 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 	
 	public void load() {
 		add(new Spaceship(this, keyEventHandler));
-		add(new Alienship(300, 20, this));
-		add(new Alienship(500, 20, this));
+		add(new Alienship(300, 60, this));
+		add(new Alienship(500, 60, this));
 	}
 	
 	public void start() {
@@ -41,12 +43,10 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 		AnimationTimer animationTimer = new AnimationTimer() {
 			@Override
 			public void handle(long currentTimeInNanoSec) {
-				
 				long deltaInNanoSec = currentTimeInNanoSec - lastTimeInNanoSec;
 				double deltaInSec = deltaInNanoSec / 1e9;;
 
 				lastTimeInNanoSec = currentTimeInNanoSec;
-			
 				collisionHandler.handle();
 
 				if (areAllAliensKilled()) {
@@ -60,6 +60,7 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 				}
 				
 				gc.clearRect(0, 0, Const.SCREEN_WIDTH, Const.SCREEN_HEIGHT);
+				drawBackground();
 				for (GameObject gameObject : Space.this) {
 					gameObject.update(deltaInSec);
 					gameObject.draw(gc);
@@ -68,6 +69,10 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 		};
 				
 		animationTimer.start();
+	}
+
+	private void drawBackground() {
+		gc.drawImage(backgroundImage, 0, 0);
 	}
 	
 	private boolean areAllAliensKilled() {
