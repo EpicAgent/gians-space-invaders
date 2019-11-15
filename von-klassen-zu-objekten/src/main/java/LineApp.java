@@ -1,3 +1,6 @@
+import geometry.Line;
+import geometry.Point;
+
 public class LineApp {
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+import geometry.Point;
+
 public class PointApp {
     public static void main(String[] args) {
 
@@ -14,6 +16,6 @@ public class PointApp {
         int x2 = p2.getX();
         int y2 = p2.getY();
 
-        System.out.println("Point 1: x=" + x1 + ", y=" + y1 + "\nPoint 2: x=" + x2 + ", y=" + y2);
+        System.out.println("geometry.Point 1: x=" + x1 + ", y=" + y1 + "\ngeometry.Point 2: x=" + x2 + ", y=" + y2);
     }
 }

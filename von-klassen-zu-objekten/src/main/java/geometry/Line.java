@@ -1,3 +1,7 @@
+package geometry;
+
+import geometry.Point;
+
 public class Line {
 
     public static double calculateDistance(Point p1, Point p2){
