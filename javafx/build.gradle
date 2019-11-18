@@ -21,4 +21,4 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'layouts.teil2.AssetGallery'
+mainClassName = 'sceneswitcher.SceneSwitcher'

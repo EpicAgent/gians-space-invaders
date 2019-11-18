@@ -59,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/praesi/lambda" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -70,11 +70,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\sceneswitcher" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources\gallery" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\layouts\teil2" />
       <recent name="C:\DEV\Java\javafx\src\main\java\auftragsmaterial" />
-      <recent name="C:\DEV\Java\javafx\src\main\java\layoutpanes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -157,7 +157,7 @@
       <workItem from="1573827401550" duration="3098000" />
       <workItem from="1574068229095" duration="42000" />
       <workItem from="1574068436631" duration="47000" />
-      <workItem from="1574068662704" duration="2870000" />
+      <workItem from="1574068662704" duration="5604000" />
     </task>
     <servers />
   </component>
