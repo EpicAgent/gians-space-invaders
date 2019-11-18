@@ -21,4 +21,4 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'layoutpanes.TeamCommenter'
+mainClassName = 'layouts.teil2.AssetGallery'

@@ -1,4 +1,4 @@
-package layoutpanes;
+package layouts.teil1;
 
 import java.util.ArrayList;
 import java.util.Comparator;

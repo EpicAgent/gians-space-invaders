@@ -1,4 +1,4 @@
-package layoutpanes;
+package layouts.teil1;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
