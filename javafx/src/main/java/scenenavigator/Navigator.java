@@ -16,7 +16,7 @@ public class Navigator {
         this.stage = stage;
     }
 
-    public void registerView(SceneType sceneType, Scene scene) {
+    public void registerScene(SceneType sceneType, Scene scene) {
         sceneMap.put(sceneType, scene);
     }
 

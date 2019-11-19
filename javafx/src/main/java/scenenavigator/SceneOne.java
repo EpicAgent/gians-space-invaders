@@ -14,10 +14,12 @@ public class SceneOne extends Scene {
     private int number = 0;
     private Label numberLabel;
     private static VBox rootNode = new VBox(10);
+    private Navigator navigator;
 
 
-    public SceneOne() {
+    public SceneOne(Navigator navigator) {
         super(rootNode);
+        this.navigator = navigator;
         rootNode.setPadding(new Insets(25));
         HBox hBox = new HBox(10);
         Button incrementButton = new Button("Increment");
@@ -35,7 +37,7 @@ public class SceneOne extends Scene {
         nextButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                SceneSwitcher.switchToScene(SceneType.TWO);
+                navigator.navigateTo(SceneType.TWO);
 
             }
         });
