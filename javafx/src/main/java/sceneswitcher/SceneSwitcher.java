@@ -27,10 +27,10 @@ public class SceneSwitcher extends Application {
         sceneMap.put(SceneType.TWO, new SceneTwo());
     }
 
-    public static void switchToScene(String sceneKey) {
+    public static void switchToScene(SceneType sceneType) {
         double width = stage.getWidth();
         double height = stage.getHeight();
-        stage.setScene(sceneMap.get(sceneKey));
+        stage.setScene(sceneMap.get(sceneType));
 
         // By default stage doesn't retain its width after calling stage.setScene(...) so we have to set width and height manually
         stage.setWidth(width);

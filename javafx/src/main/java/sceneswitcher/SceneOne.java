@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import sceneswitcher.enums.SceneType;
 
 public class SceneOne extends Scene {
     private Scene scene;
@@ -17,7 +18,7 @@ public class SceneOne extends Scene {
 
 
     public SceneOne() {
-        super(rootNode);
+        super(rootNode, 200, 120);
         rootNode.setPadding(new Insets(25));
         HBox hBox = new HBox(10);
         Button incrementButton = new Button("Increment");
@@ -35,12 +36,10 @@ public class SceneOne extends Scene {
         nextButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                SceneSwitcher.switchToScene("two");
+                SceneSwitcher.switchToScene(SceneType.TWO);
 
             }
         });
         rootNode.getChildren().addAll(hBox, nextButton);
-
-        scene = new Scene(rootNode, 200, 120);
     }
 }

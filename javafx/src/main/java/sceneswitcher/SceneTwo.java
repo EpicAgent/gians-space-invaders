@@ -6,23 +6,22 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
+import sceneswitcher.enums.SceneType;
 
 public class SceneTwo extends Scene {
-    private Scene scene;
     private static HBox rootNode = new HBox();
 
     public SceneTwo() {
-        super(rootNode);
+        super(rootNode, 200, 120);
         Button button = new Button("Go back to scene one");
 
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                SceneSwitcher.switchToScene("one");
+                SceneSwitcher.switchToScene(SceneType.ONE);
             }
         });
         rootNode.setPadding(new Insets(25));
         rootNode.getChildren().add(button);
-        scene = new Scene(rootNode, 200, 120);
     }
 }
