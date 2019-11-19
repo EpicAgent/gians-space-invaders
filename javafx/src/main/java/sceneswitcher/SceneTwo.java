@@ -7,10 +7,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 
-public class SceneTwo implements SceneProvider {
+public class SceneTwo extends Scene {
     private Scene scene;
+    private static HBox rootNode = new HBox();
 
     public SceneTwo() {
+        super(rootNode);
         Button button = new Button("Go back to scene one");
 
         button.setOnAction(new EventHandler<ActionEvent>() {
@@ -19,14 +21,8 @@ public class SceneTwo implements SceneProvider {
                 SceneSwitcher.switchToScene("one");
             }
         });
-        HBox hBox = new HBox();
-        hBox.setPadding(new Insets(25));
-        hBox.getChildren().add(button);
-        scene = new Scene(hBox, 200, 120);
-    }
-
-
-    public Scene getScene() {
-        return scene;
+        rootNode.setPadding(new Insets(25));
+        rootNode.getChildren().add(button);
+        scene = new Scene(rootNode, 200, 120);
     }
 }

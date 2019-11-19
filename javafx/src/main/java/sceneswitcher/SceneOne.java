@@ -9,18 +9,16 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class SceneOne implements SceneProvider {
-
-
+public class SceneOne extends Scene {
     private Scene scene;
     private int number = 0;
     private Label numberLabel;
+    private static VBox rootNode = new VBox(10);
 
 
     public SceneOne() {
-
-        VBox vBox = new VBox(10);
-        vBox.setPadding(new Insets(25));
+        super(rootNode);
+        rootNode.setPadding(new Insets(25));
         HBox hBox = new HBox(10);
         Button incrementButton = new Button("Increment");
         incrementButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -41,16 +39,8 @@ public class SceneOne implements SceneProvider {
 
             }
         });
-        vBox.getChildren().addAll(hBox, nextButton);
+        rootNode.getChildren().addAll(hBox, nextButton);
 
-        scene = new Scene(vBox, 200, 120);
+        scene = new Scene(rootNode, 200, 120);
     }
-
-
-    @Override
-    public Scene getScene() {
-        return scene;
-    }
-
-
 }
