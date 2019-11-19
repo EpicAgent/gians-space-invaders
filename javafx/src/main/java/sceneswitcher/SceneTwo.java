@@ -12,7 +12,7 @@ public class SceneTwo extends Scene {
     private static HBox rootNode = new HBox();
 
     public SceneTwo() {
-        super(rootNode, 200, 120);
+        super(rootNode);
         Button button = new Button("Go back to scene one");
 
         button.setOnAction(new EventHandler<ActionEvent>() {

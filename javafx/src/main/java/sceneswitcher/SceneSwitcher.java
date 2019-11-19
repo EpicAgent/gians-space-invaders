@@ -19,6 +19,7 @@ public class SceneSwitcher extends Application {
         sceneMap = new HashMap<>();
         registerScenes();
         primaryStage.setScene(sceneMap.get(SceneType.ONE));
+        primaryStage.setMinWidth(200);
         primaryStage.show();
     }
 

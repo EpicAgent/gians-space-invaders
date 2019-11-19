@@ -18,7 +18,7 @@ public class SceneOne extends Scene {
 
 
     public SceneOne() {
-        super(rootNode, 200, 120);
+        super(rootNode);
         rootNode.setPadding(new Insets(25));
         HBox hBox = new HBox(10);
         Button incrementButton = new Button("Increment");
