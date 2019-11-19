@@ -21,4 +21,5 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'sceneswitcher.SceneSwitcher'
+mainClassName = 'rectangleanimate.Game'
+

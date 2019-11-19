@@ -22,4 +22,3 @@ mainClassName = 'ch.bbcag.bbcspaceinvader.BbcSpaceInvaderApp'
 javafx {
     modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media', 'javafx.graphics']
 }
-

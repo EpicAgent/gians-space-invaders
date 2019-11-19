@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 
 
 public class BbcSpaceInvaderApp extends Application {
-
 	public static void main(String[] args) {
 		BbcSpaceInvaderApp.launch(args);
 	}

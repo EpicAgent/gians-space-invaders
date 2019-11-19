@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22166074-f7da-4ab7-85a5-0816fad89af4" name="Default Changelist" comment="" />
+    <list default="true" id="22166074-f7da-4ab7-85a5-0816fad89af4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/BbcSpaceInvaderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/BbcSpaceInvaderApp.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +63,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/praesi/lambda" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
@@ -70,11 +74,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\lambda" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\innerclass" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\implementingeventhandler" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\anonymousinnerclass" />
-      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\sceneswitcher" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -116,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="javafx [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="javafx [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -127,7 +131,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="run" />
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,9 +139,35 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="javafx [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" value="-Djavafx.animation.fullspeed=true" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.TeamChat" />
+      <item itemvalue="Application.TeamCommenter" />
+      <item itemvalue="Gradle.javafx [run]" />
+      <item itemvalue="Gradle.javafx [jar]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.javafx [run]" />
+        <item itemvalue="Gradle.javafx [jar]" />
         <item itemvalue="Application.TeamCommenter" />
         <item itemvalue="Application.TeamChat" />
       </list>
@@ -157,7 +187,8 @@
       <workItem from="1573827401550" duration="3098000" />
       <workItem from="1574068229095" duration="42000" />
       <workItem from="1574068436631" duration="47000" />
-      <workItem from="1574068662704" duration="6055000" />
+      <workItem from="1574068662704" duration="6359000" />
+      <workItem from="1574154397858" duration="9218000" />
     </task>
     <servers />
   </component>
@@ -169,7 +200,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
