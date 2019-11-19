@@ -10,11 +10,9 @@ import scenenavigator.enums.SceneType;
 
 public class SceneTwo extends Scene {
     private static HBox rootNode = new HBox();
-    private Navigator navigator;
 
     public SceneTwo(Navigator navigator) {
         super(rootNode);
-        this.navigator = navigator;
         Button button = new Button("Go back to scene one");
 
         button.setOnAction(new EventHandler<ActionEvent>() {
