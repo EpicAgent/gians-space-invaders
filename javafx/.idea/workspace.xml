@@ -59,10 +59,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
@@ -70,10 +70,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DEV\Java\javafx\src\main\java\auftragsmaterial" />
-      <recent name="C:\DEV\Java\javafx\src\main\java\layoutpanes" />
-      <recent name="C:\DEV\Java\javafx\src\main\java\layout-panes" />
-      <recent name="C:\DEV\Java\javafx\src\main\java\layout-panes\auftragsmaterial" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\lambda" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\innerclass" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\implementingeventhandler" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\anonymousinnerclass" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.javafx [run]">
+  <component name="RunManager" selected="Gradle.javafx [jar]">
     <configuration name="TeamChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="einstieg.TeamChat" />
       <module name="javafx.main" />
@@ -103,11 +104,11 @@
       </method>
     </configuration>
     <configuration name="TeamCommenter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="layoutpanes.TeamCommenter" />
+      <option name="MAIN_CLASS_NAME" value="layouts.TeamCommenter" />
       <module name="javafx.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="layoutpanes.*" />
+          <option name="PATTERN" value="layouts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="javafx [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="javafx [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,7 +127,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="run" />
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -134,8 +135,34 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="javafx [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="-Dprism.order=j2d -Dprism.order=sw" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" value="-Dprism.order=sw -Dprism.order=j2d" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.TeamChat" />
+      <item itemvalue="Application.TeamCommenter" />
+      <item itemvalue="Gradle.javafx [run]" />
+      <item itemvalue="Gradle.javafx [jar]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.javafx [jar]" />
         <item itemvalue="Gradle.javafx [run]" />
         <item itemvalue="Application.TeamCommenter" />
         <item itemvalue="Application.TeamChat" />
@@ -156,7 +183,8 @@
       <workItem from="1573827401550" duration="3098000" />
       <workItem from="1574068229095" duration="42000" />
       <workItem from="1574068436631" duration="47000" />
-      <workItem from="1574068662704" duration="402000" />
+      <workItem from="1574068662704" duration="6359000" />
+      <workItem from="1574154397858" duration="10109000" />
     </task>
     <servers />
   </component>
@@ -168,7 +196,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

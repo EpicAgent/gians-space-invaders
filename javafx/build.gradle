@@ -21,4 +21,16 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'layoutpanes.TeamCommenter'
+mainClassName = 'rectangleanimate.Launcher'
+
+jar {
+    manifest{
+        attributes 'Main-Class': 'rectangleanimate.Launcher'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+
