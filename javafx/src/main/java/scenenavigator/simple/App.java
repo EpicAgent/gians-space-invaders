@@ -1,8 +1,8 @@
-package scenenavigator;
+package scenenavigator.simple;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import scenenavigator.enums.SceneType;
+import scenenavigator.simple.enums.SceneType;
 
 public class App extends Application {
 

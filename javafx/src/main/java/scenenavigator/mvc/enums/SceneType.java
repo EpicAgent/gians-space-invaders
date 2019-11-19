@@ -1,4 +1,4 @@
-package scenenavigator.enums;
+package scenenavigator.mvc.enums;
 
 public enum SceneType {
     ONE,

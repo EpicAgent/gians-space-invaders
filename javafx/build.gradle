@@ -20,16 +20,7 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'scenenavigator.App'
+mainClassName = 'scenenavigator.mvc.App'
 
-jar {
-    manifest{
-        attributes 'Main-Class': 'rectangleanimate.Launcher'
-    }
-
-    from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-}
 
 

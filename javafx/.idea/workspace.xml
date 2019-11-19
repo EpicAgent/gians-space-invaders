@@ -37,6 +37,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="javafx" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -47,9 +53,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -61,13 +67,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bbc-spaceinvader" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/scenenavigator/mvc" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="scenenavigator.simple" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -75,11 +84,11 @@
       <recent name="numberincrementer.simple" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\scenenavigator\mvc" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\numberincrementer" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources\view" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\numberconverter\withfxml" />
       <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\numberconverter" />
-      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -120,6 +129,25 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="javafx [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="javafx [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -164,10 +192,12 @@
       <item itemvalue="Application.TeamCommenter" />
       <item itemvalue="Gradle.javafx [run]" />
       <item itemvalue="Gradle.javafx [jar]" />
+      <item itemvalue="Gradle.javafx [clean]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.javafx [run]" />
+        <item itemvalue="Gradle.javafx [clean]" />
         <item itemvalue="Gradle.javafx [jar]" />
         <item itemvalue="Application.TeamCommenter" />
         <item itemvalue="Application.TeamChat" />
@@ -189,7 +219,7 @@
       <workItem from="1574068229095" duration="42000" />
       <workItem from="1574068436631" duration="47000" />
       <workItem from="1574068662704" duration="6359000" />
-      <workItem from="1574154397858" duration="20571000" />
+      <workItem from="1574154397858" duration="22707000" />
     </task>
     <servers />
   </component>
@@ -216,6 +246,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/numberconverter/withfxml/Main.java</url>
           <line>28</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/App.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/Navigator.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/scenes/SceneOne.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

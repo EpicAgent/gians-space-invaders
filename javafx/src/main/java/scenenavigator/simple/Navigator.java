@@ -1,9 +1,9 @@
-package scenenavigator;
+package scenenavigator.simple;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import scenenavigator.enums.SceneType;
-import scenenavigator.interfaces.INavigatable;
+import scenenavigator.simple.enums.SceneType;
+import scenenavigator.simple.interfaces.INavigatable;
 
 import java.util.HashMap;
 import java.util.Map;
