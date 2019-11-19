@@ -1,7 +1,5 @@
 package scenenavigator.mvc.scenes;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -19,13 +17,11 @@ public class SceneOne extends Scene {
     private Label numberLabel;
     private static VBox rootNode = new VBox(10);
     private SceneOneModel model;
-    private SceneOneController controller;
 
 
     public SceneOne(Navigator navigator, SceneOneModel model, SceneOneController controller) {
         super(rootNode);
         this.model = model;
-        this.controller = controller;
         rootNode.setPadding(new Insets(25));
         HBox hBox = new HBox(10);
         Button incrementButton = new Button("Increment");
@@ -33,7 +29,6 @@ public class SceneOne extends Scene {
             @Override
             public void handle(ActionEvent actionEvent) {
                 controller.incrementNumber();
-
             }
         });
         numberLabel = new Label(Integer.toString(model.getNumber()));
@@ -53,6 +48,5 @@ public class SceneOne extends Scene {
 
     private void registerOnNumberChange() {
         model.numberProperty().addListener((observable, oldValue, newValue) -> numberLabel.setText(newValue.toString()));
-
     }
 }

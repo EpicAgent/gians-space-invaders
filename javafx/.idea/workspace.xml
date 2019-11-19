@@ -219,7 +219,7 @@
       <workItem from="1574068229095" duration="42000" />
       <workItem from="1574068436631" duration="47000" />
       <workItem from="1574068662704" duration="6359000" />
-      <workItem from="1574154397858" duration="22707000" />
+      <workItem from="1574154397858" duration="22832000" />
     </task>
     <servers />
   </component>
@@ -259,7 +259,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/scenes/SceneOne.java</url>
-          <line>25</line>
+          <line>22</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
