@@ -22,6 +22,8 @@ public class Game extends Application {
         rectangle.setCacheHint(CacheHint.SPEED);
         lastTimeInNano = System.nanoTime();
         Pane rootPane = new Pane();
+        rootPane.setCache(true);
+        rootPane.setCacheHint(CacheHint.SPEED);
         rootPane.getChildren().add(rectangle);
         Scene scene = new Scene(rootPane, 800,600);
         primaryStage.setScene(scene);

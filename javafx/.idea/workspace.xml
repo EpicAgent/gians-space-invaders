@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22166074-f7da-4ab7-85a5-0816fad89af4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/BbcSpaceInvaderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/BbcSpaceInvaderApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="22166074-f7da-4ab7-85a5-0816fad89af4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.javafx [run]">
+  <component name="RunManager" selected="Gradle.javafx [jar]">
     <configuration name="TeamChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="einstieg.TeamChat" />
       <module name="javafx.main" />
@@ -144,7 +140,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="-Dprism.order=j2d -Dprism.order=sw" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -153,7 +149,7 @@
             <option value="run" />
           </list>
         </option>
-        <option name="vmOptions" value="-Djavafx.animation.fullspeed=true" />
+        <option name="vmOptions" value="-Dprism.order=sw -Dprism.order=j2d" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
@@ -166,8 +162,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.javafx [run]" />
         <item itemvalue="Gradle.javafx [jar]" />
+        <item itemvalue="Gradle.javafx [run]" />
         <item itemvalue="Application.TeamCommenter" />
         <item itemvalue="Application.TeamChat" />
       </list>
@@ -188,7 +184,7 @@
       <workItem from="1574068229095" duration="42000" />
       <workItem from="1574068436631" duration="47000" />
       <workItem from="1574068662704" duration="6359000" />
-      <workItem from="1574154397858" duration="9218000" />
+      <workItem from="1574154397858" duration="10109000" />
     </task>
     <servers />
   </component>

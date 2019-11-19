@@ -21,5 +21,16 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'rectangleanimate.Game'
+mainClassName = 'rectangleanimate.Launcher'
+
+jar {
+    manifest{
+        attributes 'Main-Class': 'rectangleanimate.Launcher'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 
