@@ -1,9 +1,9 @@
-package sceneswitcher;
+package scenenavigator;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import sceneswitcher.enums.SceneType;
+import scenenavigator.enums.SceneType;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package sceneswitcher;
+package scenenavigator;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -6,7 +6,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
-import sceneswitcher.enums.SceneType;
+import scenenavigator.enums.SceneType;
 
 public class SceneTwo extends Scene {
     private static HBox rootNode = new HBox();

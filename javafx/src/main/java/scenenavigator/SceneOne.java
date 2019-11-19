@@ -1,4 +1,4 @@
-package sceneswitcher;
+package scenenavigator;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -8,10 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import sceneswitcher.enums.SceneType;
+import scenenavigator.enums.SceneType;
 
 public class SceneOne extends Scene {
-    private Scene scene;
     private int number = 0;
     private Label numberLabel;
     private static VBox rootNode = new VBox(10);
