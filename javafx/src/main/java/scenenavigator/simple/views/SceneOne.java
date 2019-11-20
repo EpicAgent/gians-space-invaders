@@ -29,7 +29,7 @@ public class SceneOne extends Scene {
                 numberLabel.setText(Integer.toString(number));
             }
         });
-        numberLabel = new Label("0");
+        numberLabel = new Label(Integer.toString(number));
         hBox.getChildren().addAll(incrementButton, numberLabel);
 
         Button nextButton = new Button("Go to scene two");

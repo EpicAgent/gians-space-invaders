@@ -20,7 +20,7 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'scenenavigator.mvc.App'
+mainClassName = 'scenenavigator.simple.App'
 
 
 
