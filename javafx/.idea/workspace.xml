@@ -37,6 +37,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="javafx" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -47,6 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -59,22 +67,28 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="scenenavigator.simple" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="numberincrementer.simple" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources" />
-      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\lambda" />
-      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\innerclass" />
-      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\implementingeventhandler" />
-      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\praesi\anonymousinnerclass" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\scenenavigator\mvc" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\numberincrementer" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\resources\view" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\numberconverter\withfxml" />
+      <recent name="C:\DEV\Java\applikationsentwicklungsmodul\javafx\src\main\java\numberconverter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -89,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.javafx [jar]">
+  <component name="RunManager" selected="Gradle.javafx [run]">
     <configuration name="TeamChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="einstieg.TeamChat" />
       <module name="javafx.main" />
@@ -116,6 +130,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="javafx [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="javafx [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,7 +173,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="-Dprism.order=j2d -Dprism.order=sw" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -149,7 +182,7 @@
             <option value="run" />
           </list>
         </option>
-        <option name="vmOptions" value="-Dprism.order=sw -Dprism.order=j2d" />
+        <option name="vmOptions" value="" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
@@ -159,11 +192,13 @@
       <item itemvalue="Application.TeamCommenter" />
       <item itemvalue="Gradle.javafx [run]" />
       <item itemvalue="Gradle.javafx [jar]" />
+      <item itemvalue="Gradle.javafx [clean]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.javafx [jar]" />
         <item itemvalue="Gradle.javafx [run]" />
+        <item itemvalue="Gradle.javafx [clean]" />
+        <item itemvalue="Gradle.javafx [jar]" />
         <item itemvalue="Application.TeamCommenter" />
         <item itemvalue="Application.TeamChat" />
       </list>
@@ -184,7 +219,8 @@
       <workItem from="1574068229095" duration="42000" />
       <workItem from="1574068436631" duration="47000" />
       <workItem from="1574068662704" duration="6359000" />
-      <workItem from="1574154397858" duration="10109000" />
+      <workItem from="1574154397858" duration="22935000" />
+      <workItem from="1574235954826" duration="670000" />
     </task>
     <servers />
   </component>
@@ -203,5 +239,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/numberconverter/withfxml/Main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/App.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/Navigator.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/scenes/SceneOne.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

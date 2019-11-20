@@ -7,7 +7,6 @@ plugins {
 group 'ch.bbcag'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -21,16 +20,7 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'rectangleanimate.Launcher'
+mainClassName = 'scenenavigator.simple.App'
 
-jar {
-    manifest{
-        attributes 'Main-Class': 'rectangleanimate.Launcher'
-    }
-
-    from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-}
 
 
