@@ -1,4 +1,4 @@
-package scenenavigator.simple.enums;
+package scenenavigator.simple.common.enums;
 
 public enum SceneType {
     ONE,

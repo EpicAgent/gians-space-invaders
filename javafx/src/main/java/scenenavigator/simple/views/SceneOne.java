@@ -1,4 +1,4 @@
-package scenenavigator.simple;
+package scenenavigator.simple.views;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -8,7 +8,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import scenenavigator.simple.enums.SceneType;
+import scenenavigator.simple.common.Navigator;
+import scenenavigator.simple.common.enums.SceneType;
 
 public class SceneOne extends Scene {
     private int number = 0;

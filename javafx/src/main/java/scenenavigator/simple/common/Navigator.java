@@ -1,9 +1,8 @@
-package scenenavigator.simple;
+package scenenavigator.simple.common;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import scenenavigator.simple.enums.SceneType;
-import scenenavigator.simple.interfaces.INavigatable;
+import scenenavigator.simple.common.enums.SceneType;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,14 +21,6 @@ public class Navigator {
 
     public void navigateTo(SceneType sceneType) {
         stage.setScene(sceneMap.get(sceneType));
-        stage.show();
-    }
-
-    public <T> void navigateTo(SceneType key, T arg) {
-        Scene scene = sceneMap.get(key);
-        ((INavigatable<T>)scene).navigatedTo(arg);
-
-        stage.setScene(scene);
         stage.show();
     }
 }
