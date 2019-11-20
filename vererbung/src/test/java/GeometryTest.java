@@ -44,4 +44,11 @@ public class GeometryTest {
         Ellipse ellipse = new Ellipse(new Point(1,1),2, 3);
         assertEquals(3, ellipse.getRadiusY());
     }
+
+    @Test
+    void circle_getCenter_CorrectCenterGetReturned(){
+        Circle circle = new Circle(new Point(1,1),2);
+        Point actualPoint = circle.getCenter();
+        assertEquals(new Point(1, 1), actualPoint);
+    }
 }
