@@ -1,4 +1,4 @@
-package geometry.unterichtsmaterial;
+package geometry.auftragsmaterial;
 
 public class Rectangle {
 
