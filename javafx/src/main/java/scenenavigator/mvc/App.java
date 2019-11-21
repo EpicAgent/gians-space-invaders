@@ -2,11 +2,12 @@ package scenenavigator.mvc;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import scenenavigator.mvc.common.Navigator;
 import scenenavigator.mvc.controllers.SceneOneController;
-import scenenavigator.mvc.enums.SceneType;
+import scenenavigator.mvc.common.enums.SceneType;
 import scenenavigator.mvc.models.SceneOneModel;
-import scenenavigator.mvc.scenes.SceneOne;
-import scenenavigator.mvc.scenes.SceneTwo;
+import scenenavigator.mvc.views.SceneOne;
+import scenenavigator.mvc.views.SceneTwo;
 
 public class App extends Application {
 

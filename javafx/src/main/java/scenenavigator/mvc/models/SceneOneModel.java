@@ -10,11 +10,11 @@ public class SceneOneModel {
         return number.get();
     }
 
-    public IntegerProperty numberProperty() {
-        return number;
-    }
-
     public void setNumber(int number) {
         this.number.set(number);
+    }
+
+    public IntegerProperty numberProperty() {
+        return number;
     }
 }

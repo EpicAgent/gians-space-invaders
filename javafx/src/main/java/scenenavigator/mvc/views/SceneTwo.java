@@ -1,4 +1,4 @@
-package scenenavigator.mvc.scenes;
+package scenenavigator.mvc.views;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -6,8 +6,8 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
-import scenenavigator.mvc.Navigator;
-import scenenavigator.mvc.enums.SceneType;
+import scenenavigator.mvc.common.Navigator;
+import scenenavigator.mvc.common.enums.SceneType;
 
 public class SceneTwo extends Scene {
     private static HBox rootNode = new HBox();

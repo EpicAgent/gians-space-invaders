@@ -1,8 +1,8 @@
-package scenenavigator.mvc;
+package scenenavigator.mvc.common;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import scenenavigator.mvc.enums.SceneType;
+import scenenavigator.mvc.common.enums.SceneType;
 import scenenavigator.mvc.interfaces.INavigatable;
 
 import java.util.HashMap;

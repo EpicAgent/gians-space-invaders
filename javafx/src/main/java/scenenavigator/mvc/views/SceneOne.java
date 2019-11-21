@@ -1,5 +1,7 @@
-package scenenavigator.mvc.scenes;
+package scenenavigator.mvc.views;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -8,9 +10,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import scenenavigator.mvc.Navigator;
+import scenenavigator.mvc.common.Navigator;
 import scenenavigator.mvc.controllers.SceneOneController;
-import scenenavigator.mvc.enums.SceneType;
+import scenenavigator.mvc.common.enums.SceneType;
 import scenenavigator.mvc.models.SceneOneModel;
 
 public class SceneOne extends Scene {

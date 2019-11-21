@@ -67,7 +67,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../blah" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -220,7 +220,8 @@
       <workItem from="1574068436631" duration="47000" />
       <workItem from="1574068662704" duration="6359000" />
       <workItem from="1574154397858" duration="22935000" />
-      <workItem from="1574235954826" duration="670000" />
+      <workItem from="1574235954826" duration="19100000" />
+      <workItem from="1574340069276" duration="15000" />
     </task>
     <servers />
   </component>
@@ -249,17 +250,12 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/App.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/Navigator.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/common/Navigator.java</url>
           <line>19</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/scenes/SceneOne.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/scenenavigator/mvc/views/SceneOne.java</url>
           <line>22</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>

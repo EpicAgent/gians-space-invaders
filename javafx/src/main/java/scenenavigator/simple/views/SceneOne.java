@@ -26,6 +26,8 @@ public class SceneOne extends Scene {
             @Override
             public void handle(ActionEvent actionEvent) {
                 number++;
+
+                // Muss in die Methode changed(...) verschoben werden
                 numberLabel.setText(Integer.toString(number));
             }
         });
