@@ -20,9 +20,12 @@ public class StringExtensions {
 
     static int sumOfTheDigits(String value) {
         int result = 0;
-        for ( int i = 0; i < value.length(); i++ )
-            result += (value.charAt( i ) - '0');
-
+        char c = '0';
+        for ( int i = 0; i < value.length(); i++ ) {
+            c = value.charAt(i);
+            if (!Character.isDigit(c)) throw new RuntimeException("Input contains non digit characters: " + value);
+            result += Integer.parseInt(Character.toString(c));
+        }
         return result;
     }
 }
