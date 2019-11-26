@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22166074-f7da-4ab7-85a5-0816fad89af4" name="Default Changelist" comment="" />
+    <list default="true" id="22166074-f7da-4ab7-85a5-0816fad89af4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Spaceship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Spaceship.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bbc-spaceinvader" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -89,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.javafx [jar]">
+  <component name="RunManager" selected="Gradle.javafx [run]">
     <configuration name="TeamChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="einstieg.TeamChat" />
       <module name="javafx.main" />
@@ -121,7 +123,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -130,17 +132,17 @@
             <option value="jar" />
           </list>
         </option>
-        <option name="vmOptions" />
+        <option name="vmOptions" value="-Djavafx.animation.fullspeed=true" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="javafx [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="javafx [run]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="-Dprism.order=j2d -Dprism.order=sw" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -149,7 +151,7 @@
             <option value="run" />
           </list>
         </option>
-        <option name="vmOptions" value="-Dprism.order=sw -Dprism.order=j2d" />
+        <option name="vmOptions" value="-Djavafx.animation.fullspeed=true " />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
@@ -163,7 +165,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.javafx [jar]" />
-        <item itemvalue="Gradle.javafx [run]" />
         <item itemvalue="Application.TeamCommenter" />
         <item itemvalue="Application.TeamChat" />
       </list>
@@ -185,6 +186,8 @@
       <workItem from="1574068436631" duration="47000" />
       <workItem from="1574068662704" duration="6359000" />
       <workItem from="1574154397858" duration="10109000" />
+      <workItem from="1574169365005" duration="1042000" />
+      <workItem from="1574170507103" duration="499000" />
     </task>
     <servers />
   </component>

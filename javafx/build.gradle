@@ -21,7 +21,7 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'rectangleanimate.Launcher'
+mainClassName = 'animationtimertest.Launcher'
 
 jar {
     manifest{

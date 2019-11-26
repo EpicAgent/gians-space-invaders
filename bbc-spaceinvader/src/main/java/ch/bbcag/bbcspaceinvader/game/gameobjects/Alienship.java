@@ -29,7 +29,7 @@ public class Alienship extends GameObject {
     }
     
 	private void throwBomb() {
-		space.add(new Bomb(getBoundingBox().getCenterX(), getBoundingBox().getMaxY()));
+		space.add(new Bomb(x + getBoundingBox().getWidth()/2, getBoundingBox().getMaxY()));
 	}
         
     private void moveInCurrentDirection(double deltaTimeInSec) {

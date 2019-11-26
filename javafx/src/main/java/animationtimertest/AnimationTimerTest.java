@@ -46,7 +46,7 @@ import javafx.stage.Stage;
 public class AnimationTimerTest extends Application {
 
     private ObservableList<Ball> balls = FXCollections.observableArrayList();
-    private static final int NUM_BALLS = 1;
+    private static final int NUM_BALLS = 400;
     private static final double MIN_RADIUS = 5 ;
     private static final double MAX_RADIUS = 15 ;
     private static final double MIN_SPEED = 50 ;

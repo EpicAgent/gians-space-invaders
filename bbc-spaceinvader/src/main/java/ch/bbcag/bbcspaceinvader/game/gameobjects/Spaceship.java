@@ -38,11 +38,11 @@ public class Spaceship extends GameObject {
 		double distanceToMove = speed * deltaInSec;
 		if (keyEventHandler.isLeftKeyPressed() && x > 0)
 			x = x - distanceToMove;
-		
+
 		if (keyEventHandler.isRightKeyPressed() && x < Const.SCREEN_WIDTH - Const.SPACESHIP_WIDTH)
 			x = x + distanceToMove;
 	}
-	
+
     private void chargeBattery(double deltaTime) {
     	if (currentBatteryPower < MAX_BATTERY_POWER) {
     		currentBatteryPower = currentBatteryPower + deltaTime;
@@ -50,6 +50,6 @@ public class Spaceship extends GameObject {
     }
 
     private void createLaserShot() {
-    	space.add(new Laser(getBoundingBox().getCenterX(), getBoundingBox().getMinY() - getBoundingBox().getHeight()));
+    	space.add(new Laser(x + getBoundingBox().getWidth()/2, getBoundingBox().getMinY() - getBoundingBox().getHeight()));
     }
 }

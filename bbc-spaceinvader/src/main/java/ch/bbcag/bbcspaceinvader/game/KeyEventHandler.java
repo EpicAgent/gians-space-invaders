@@ -24,7 +24,6 @@ public class KeyEventHandler implements EventHandler<KeyEvent> {
 	
 	@Override
 	public void handle(KeyEvent event) {
-
 		if (event.getEventType() == KeyEvent.KEY_PRESSED) {
 			setKeyStates(event, true);
 		}
