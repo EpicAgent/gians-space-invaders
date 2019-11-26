@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c81c3c1-19aa-4a5a-9dfe-4aa47afeedde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/applikationsentwicklungsmodul.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bbc-spaceinvader/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bbc-spaceinvader/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IntArrayExtensions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StringExtensions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/IntArrayExtensionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StringExtensionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/BbcSpaceInvaderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/BbcSpaceInvaderApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Alienship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Alienship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Spaceship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Spaceship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../klassen/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../klassen/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1U90T9fbpno3jhuHUKabbwPZd9I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\riedm\unittest\src\test\java" />
+      <recent name="C:\Users\riedm\unittest\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'unittest.test'">
+    <configuration name="StringExtensionsTest.sumOfTheDigits" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;StringExtensionsTest.sumOfTheDigits&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'unittest.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'unittest.test'" />
+        <item itemvalue="Gradle.StringExtensionsTest.sumOfTheDigits" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c81c3c1-19aa-4a5a-9dfe-4aa47afeedde" name="Default Changelist" comment="" />
+      <created>1574753508145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574753508145</updated>
+      <workItem from="1574753509868" duration="129000" />
+      <workItem from="1574753713683" duration="458000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StringExtensionsTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
