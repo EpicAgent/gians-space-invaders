@@ -1,4 +1,4 @@
-package sceneswitcher;
+package scenenavigator.simple.views;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -6,27 +6,23 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
+import scenenavigator.simple.common.Navigator;
+import scenenavigator.simple.common.enums.SceneType;
 
-public class SceneTwo implements SceneProvider {
-    private Scene scene;
+public class SceneTwo extends Scene {
+    private static HBox rootNode = new HBox();
 
-    public SceneTwo() {
+    public SceneTwo(Navigator navigator) {
+        super(rootNode);
         Button button = new Button("Go back to scene one");
 
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                SceneSwitcher.switchToScene("one");
+                navigator.navigateTo(SceneType.ONE);
             }
         });
-        HBox hBox = new HBox();
-        hBox.setPadding(new Insets(25));
-        hBox.getChildren().add(button);
-        scene = new Scene(hBox, 200, 120);
-    }
-
-
-    public Scene getScene() {
-        return scene;
+        rootNode.setPadding(new Insets(25));
+        rootNode.getChildren().add(button);
     }
 }

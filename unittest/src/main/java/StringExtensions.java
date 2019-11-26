@@ -1,5 +1,3 @@
-package auftragsmaterial;
-
 public class StringExtensions {
 
     public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class StringExtensions {
         System.out.println(sumOfTheDigits(zahl)); // Quersumme
     }
 
-    static String reverse(String text){
+    public static String reverse(String text){
         String reversedText = "";
         for (int i = 0; i < text.length() ; i++) {
             reversedText = text.charAt(i) + reversedText;
@@ -18,7 +16,7 @@ public class StringExtensions {
         return reversedText;
     }
 
-    static int sumOfTheDigits(String value) {
+    public static int sumOfTheDigits(String value) {
         int result = 0;
         char c = '0';
         for ( int i = 0; i < value.length(); i++ ) {
