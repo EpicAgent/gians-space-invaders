@@ -15,7 +15,7 @@ public class Spaceship extends GameObject {
 	private double currentBatteryPower = 0;
 
 	public Spaceship(Space space, KeyEventHandler keyEventHandler) {
-		super(350, 450, 100, "Spaceship.png");
+		super(350, 430, 100, "Spaceship.png");
 		this.keyEventHandler = keyEventHandler;
 	    this.space = space;
 	}
@@ -50,6 +50,6 @@ public class Spaceship extends GameObject {
     }
 
     private void createLaserShot() {
-    	space.add(new Laser(x + getBoundingBox().getWidth()/2, getBoundingBox().getMinY() - getBoundingBox().getHeight()));
+    	space.add(new Laser(x + getBoundingBox().getWidth()/2, y - 20));
     }
 }
