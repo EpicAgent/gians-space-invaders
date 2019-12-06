@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22166074-f7da-4ab7-85a5-0816fad89af4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Spaceship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Spaceship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Alienship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Alienship.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bbc-spaceinvader" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafxframework" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -188,6 +188,7 @@
       <workItem from="1574154397858" duration="10109000" />
       <workItem from="1574169365005" duration="1042000" />
       <workItem from="1574170507103" duration="499000" />
+      <workItem from="1574778758596" duration="207000" />
     </task>
     <servers />
   </component>

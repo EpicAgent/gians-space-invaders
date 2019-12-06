@@ -1,22 +1,28 @@
 package geometry.auftragsmaterial;
 
 public class Circle {
-
-    private Point center;
     private int radius;
+    private Point position;
+    private Color fill;
 
-    public Circle(Point center, int radius) {
-        this.center = center;
+    public Circle(Point position, int radius) {
         this.radius = radius;
+        this.position = position;
     }
 
-    public double calculateArea() {
-        double area = Math.PI * (radius * radius);
-        return area;
+    public int getRadius() {
+        return radius;
     }
 
-    public double calculateCircumference() {
-        double circumference = 2 * radius * radius;
-        return circumference;
+    public Point getPosition() {
+        return position;
+    }
+
+    public Color getFill() {
+        return fill;
+    }
+
+    public void setFill(Color fill) {
+        this.fill = fill;
     }
 }
