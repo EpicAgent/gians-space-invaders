@@ -1,24 +1,34 @@
 package geometry.auftragsmaterial;
 
 public class Rectangle {
-
-    private Point topLeft;
     private int width;
     private int height;
+    private Point position;
+    private Color fill;
 
-    public Rectangle(Point topLeft, int width, int height) {
-        this.topLeft = topLeft;
+    public Rectangle(Point position, int width, int height) {
+        this.position = position;
         this.width = width;
         this.height = height;
     }
 
-    public double calculateArea() {
-        double area = width * height;
-        return area;
+    public int getWidth() {
+        return width;
     }
 
-    public double calculateCircumference() {
-        double circumference = 2 * width * height;
-        return circumference;
+    public int getHeight() {
+        return height;
+    }
+
+    public Point getPosition() {
+        return position;
+    }
+
+    public Color getFill() {
+        return fill;
+    }
+
+    public void setFill(Color fill) {
+        this.fill = fill;
     }
 }

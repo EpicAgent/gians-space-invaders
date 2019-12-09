@@ -1,14 +1,25 @@
 package geometry;
 
-public class Shape {
+public abstract class Shape {
+    protected Color fill = Color.Black;
+    protected Point position = new Point(0, 0);
 
-    protected Color fillColor;
+    protected abstract double calculateArea();
+    protected abstract double calculateCircumference();
 
-    public Color getFill() {
-        return fillColor;
+    protected Color getFill() {
+        return fill;
     }
 
-    public void setFill(Color fillColor) {
-        this.fillColor = fillColor;
+    protected void setFill(Color fill) {
+        this.fill = fill;
+    }
+
+    public Point getPosition() {
+        return position;
+    }
+
+    public void setPosition(Point position) {
+        this.position = position;
     }
 }

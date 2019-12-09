@@ -1,5 +1,5 @@
 package praesi;
 
-public class Säugetier extends Lebewesen{
+public class Saeugetier extends Lebewesen{
     public void drinkeMilch() { /* ... */ }
 }

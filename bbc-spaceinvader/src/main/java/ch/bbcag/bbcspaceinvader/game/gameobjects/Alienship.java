@@ -52,6 +52,6 @@ public class Alienship extends GameObject {
 	}
 		
 	private boolean isBatteryFull() {
-		return Math.random() < 0.004;
+		return Math.random() < 0.009;
 	}
 }
