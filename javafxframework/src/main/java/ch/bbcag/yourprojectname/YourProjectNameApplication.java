@@ -6,34 +6,35 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 import ch.bbcag.yourprojectname.util.GlobalExceptionHandler;
-import ch.bbcag.yourprojectname.util.Navigator;
-import ch.bbcag.yourprojectname.util.ViewType;
-import ch.bbcag.yourprojectname.view.GameView;
-import ch.bbcag.yourprojectname.view.StartView;
+import ch.bbcag.yourprojectname.util.SceneNavigator;
+import ch.bbcag.yourprojectname.util.SceneType;
+import ch.bbcag.yourprojectname.view.GameScene;
+import ch.bbcag.yourprojectname.view.StartScene;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
 public class YourProjectNameApplication extends Application {
 
 	private final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-	private final String fileName = "Log-File.txt";
-	private Navigator navigator;
+	private static final String LOG_FILE_NAME = "Log-File.txt";
+	private static final int DEFAULT_STAGE_WIDTH = 800;
+	private static final int DEFAULT_STAGE_HEIGHT = 600;
 	
 	public static void main(String[] args) {
 		launch(args);
 	}
 	
 	@Override
-	public void start(Stage stage) throws Exception {
-		
+	public void start(Stage stage) {
 		setupExceptionHandling();
-		
-		navigator = new Navigator(stage);
-		navigator.registerView(ViewType.START, new StartView(navigator));
-		navigator.registerView(ViewType.GAME, new GameView(navigator));
+		setupStage(stage);
+
+		SceneNavigator navigator = new SceneNavigator(stage);
+		navigator.registerScene(SceneType.START, new StartScene(navigator));
+		navigator.registerScene(SceneType.GAME, new GameScene(navigator));
 		// Register all further scenes here
 
-		navigator.switchToView(ViewType.START); // Set default scene
+		navigator.navigateTo(SceneType.START); // Set default scene
 	}
 
 	// Don't touch unless you know what you do
@@ -42,7 +43,7 @@ public class YourProjectNameApplication extends Application {
 		// Register Global Exception Handler;
 		FileHandler fileHandler;
 		try {
-			fileHandler = new FileHandler(fileName);
+			fileHandler = new FileHandler(LOG_FILE_NAME);
 		} catch (SecurityException | IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -51,5 +52,10 @@ public class YourProjectNameApplication extends Application {
 		logger.addHandler(fileHandler);
 		
 		Thread.currentThread().setUncaughtExceptionHandler(new GlobalExceptionHandler(logger));
+	}
+
+	private void setupStage(Stage stage) {
+		stage.setWidth(DEFAULT_STAGE_WIDTH);
+		stage.setHeight(DEFAULT_STAGE_HEIGHT);
 	}
 }

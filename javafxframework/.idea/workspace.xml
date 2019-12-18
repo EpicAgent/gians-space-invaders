@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="904597c7-0398-4ee2-a8d7-41096578e7be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Alienship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bbc-spaceinvader/src/main/java/ch/bbcag/bbcspaceinvader/game/gameobjects/Alienship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javafx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javafx/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javafx/src/main/java/numberincrementer/simple/NumberIncrementerScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javafx/src/main/java/numberincrementer/simple/NumberIncrementerScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneNavigator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log-File.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Log-File.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/YourProjectNameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/YourProjectNameApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/Navigator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/OneArgumentReceiverInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/OneArgumentNavigatable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneProviderInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/ViewType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/GameScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/StartView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/StartScene.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +29,28 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="javafxframework" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="javafxframework" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="javafxframework" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -41,7 +66,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sandbox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -98,6 +123,7 @@
       <updated>1573475047251</updated>
       <workItem from="1573475051282" duration="106000" />
       <workItem from="1574778969200" duration="1337000" />
+      <workItem from="1576683120169" duration="2947000" />
     </task>
     <servers />
   </component>
@@ -109,7 +135,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
