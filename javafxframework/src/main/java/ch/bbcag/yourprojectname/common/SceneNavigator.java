@@ -1,4 +1,4 @@
-package ch.bbcag.yourprojectname.util;
+package ch.bbcag.yourprojectname.common;
 
 import java.util.HashMap;
 import java.util.Map;

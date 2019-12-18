@@ -1,4 +1,4 @@
-package ch.bbcag.yourprojectname.util;
+package ch.bbcag.yourprojectname.common;
 
 import java.lang.Thread.UncaughtExceptionHandler;
 import java.util.logging.Level;

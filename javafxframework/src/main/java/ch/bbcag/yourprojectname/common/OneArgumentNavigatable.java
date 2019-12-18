@@ -1,4 +1,4 @@
-package ch.bbcag.yourprojectname.util;
+package ch.bbcag.yourprojectname.common;
 
 public interface OneArgumentNavigatable<T>  {
 	void onNavigatedTo(T arg);

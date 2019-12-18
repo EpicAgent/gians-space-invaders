@@ -1,8 +1,8 @@
 package ch.bbcag.yourprojectname.view;
 
 import ch.bbcag.yourprojectname.SomeArgument;
-import ch.bbcag.yourprojectname.util.SceneNavigator;
-import ch.bbcag.yourprojectname.util.SceneType;
+import ch.bbcag.yourprojectname.common.SceneNavigator;
+import ch.bbcag.yourprojectname.common.SceneType;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;

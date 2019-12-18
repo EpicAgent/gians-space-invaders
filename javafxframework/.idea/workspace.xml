@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="904597c7-0398-4ee2-a8d7-41096578e7be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneNavigator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log-File.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Log-File.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/YourProjectNameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/YourProjectNameApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/Navigator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/OneArgumentReceiverInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/OneArgumentNavigatable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneProviderInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/ViewType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/GameScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/StartView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/StartScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/OneArgumentNavigatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/common/OneArgumentNavigatable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneNavigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/common/SceneNavigator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/util/SceneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/common/SceneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/GameScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/GameScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/StartScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbcag/yourprojectname/view/StartScene.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +119,7 @@
       <updated>1573475047251</updated>
       <workItem from="1573475051282" duration="106000" />
       <workItem from="1574778969200" duration="1337000" />
-      <workItem from="1576683120169" duration="2947000" />
+      <workItem from="1576683120169" duration="4049000" />
     </task>
     <servers />
   </component>

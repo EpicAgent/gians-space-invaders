@@ -5,9 +5,9 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-import ch.bbcag.yourprojectname.util.GlobalExceptionHandler;
-import ch.bbcag.yourprojectname.util.SceneNavigator;
-import ch.bbcag.yourprojectname.util.SceneType;
+import ch.bbcag.yourprojectname.common.GlobalExceptionHandler;
+import ch.bbcag.yourprojectname.common.SceneNavigator;
+import ch.bbcag.yourprojectname.common.SceneType;
 import ch.bbcag.yourprojectname.view.GameScene;
 import ch.bbcag.yourprojectname.view.StartScene;
 import javafx.application.Application;
