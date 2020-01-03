@@ -11,7 +11,6 @@ public class Bomb {
     private double x;
     private double y;
     private Image image = new Image(this.getClass().getResourceAsStream("/bomb.png"));
-    private Direction direction = Direction.RIGHT;
 
     public Bomb(double x, double y) {
         this.x = x;
