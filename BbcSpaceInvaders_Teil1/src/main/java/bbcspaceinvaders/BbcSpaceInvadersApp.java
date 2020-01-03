@@ -1,11 +1,10 @@
 package bbcspaceinvaders;
 
-import bbcspaceinvaders.gameobjects.Alienship;
-import bbcspaceinvaders.gameobjects.Bomb;
-import bbcspaceinvaders.gameobjects.Laser;
+import bbcspaceinvaders.game.gameobjects.Alienship;
+import bbcspaceinvaders.game.gameobjects.Bomb;
+import bbcspaceinvaders.game.gameobjects.Laser;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.geometry.BoundingBox;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -69,8 +68,8 @@ public class BbcSpaceInvadersApp extends Application {
         gc = canvas.getGraphicsContext2D();
         stage.setTitle("Bbc SpaceInvaders");
 
-        alienFleet.add(new Alienship(100, 40, canvas));
-        alienFleet.add(new Alienship(200, 40, canvas));
+        alienFleet.add(new Alienship(100, 40, canvas, bombs));
+        alienFleet.add(new Alienship(200, 40, canvas, bombs));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -132,9 +131,6 @@ public class BbcSpaceInvadersApp extends Application {
 
         for (Alienship alienship : alienFleet) {
             alienship.update(deltaInSec);
-            if (Math.random() < 0.02) {
-                bombs.add(new Bomb(alienship.getBoundingBox().getCenterX(), alienship.getBoundingBox().getMaxY()));
-            }
         }
         for (Laser laser : laserShots) {
             laser.update(deltaInSec);
