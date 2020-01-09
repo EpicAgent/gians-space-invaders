@@ -1,66 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="173d24db-86a8-446b-a46b-16b17cfb6171" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/BbcSpaceInvaders_Teil1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/demo/ExceptionsDemoApp$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/demo/ExceptionsDemoApp$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/demo/ExceptionsDemoApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/demo/MyApplicationException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/praesi/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/praesi/Demo1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/praesi/Demo2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/praesi/Demo3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/praesi/Demo4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/praesi/MySelfWritenException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/praesi/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/ExceptionsDemoApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/MyApplicationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/Demo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/Demo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/Demo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/Demo4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/MySelfWritenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/praesi/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../von-klassen-zu-objekten/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BbcSpaceInvaders_Teil1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../von-klassen-zu-objekten/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../von-klassen-zu-objekten/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../von-klassen-zu-objekten/src/main/java/NullPointerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../von-klassen-zu-objekten/src/main/java/NullPointerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../von-klassen-zu-objekten/src/main/java/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../von-klassen-zu-objekten/src/main/java/Result.java" afterDir="false" />
-    </list>
+    <list default="true" id="173d24db-86a8-446b-a46b-16b17cfb6171" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,15 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\Users\riedm\IdeaProjects\applikationsentwicklungsmodul\Exceptions\.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="1W9SUGB4WZa3o6iykfbd41bg8iA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -100,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -118,53 +51,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Exceptions" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Exceptions" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,8 +84,9 @@
       <option name="presentableId" value="Default" />
       <updated>1578560331659</updated>
       <workItem from="1578560338981" duration="1512000" />
-      <workItem from="1578561919521" duration="1829000" />
-      <workItem from="1578564327777" duration="250000" />
+      <workItem from="1578561919521" duration="2069000" />
+      <workItem from="1578564305913" duration="21000" />
+      <workItem from="1578565080275" duration="547000" />
     </task>
     <servers />
   </component>
@@ -207,33 +94,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="741" y="284" key="FileChooserDialogImpl" timestamp="1578564576070">
+    <state x="741" y="284" key="FileChooserDialogImpl" timestamp="1578564325417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="741" y="284" key="FileChooserDialogImpl/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564576070" />
-    <state width="1878" height="87" key="GridCell.Tab.0.bottom" timestamp="1578564050290">
+    <state x="741" y="284" key="FileChooserDialogImpl/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564325417" />
+    <state width="1878" height="87" key="GridCell.Tab.0.bottom" timestamp="1578564244650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1878" height="87" key="GridCell.Tab.0.bottom/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564050290" />
-    <state width="1878" height="87" key="GridCell.Tab.0.center" timestamp="1578564050290">
+    <state width="1878" height="87" key="GridCell.Tab.0.bottom/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564244650" />
+    <state width="1878" height="87" key="GridCell.Tab.0.center" timestamp="1578564244650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1878" height="87" key="GridCell.Tab.0.center/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564050290" />
-    <state width="1878" height="87" key="GridCell.Tab.0.left" timestamp="1578564050290">
+    <state width="1878" height="87" key="GridCell.Tab.0.center/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564244650" />
+    <state width="1878" height="87" key="GridCell.Tab.0.left" timestamp="1578564244650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1878" height="87" key="GridCell.Tab.0.left/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564050290" />
-    <state width="1878" height="87" key="GridCell.Tab.0.right" timestamp="1578564050290">
+    <state width="1878" height="87" key="GridCell.Tab.0.left/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564244650" />
+    <state width="1878" height="87" key="GridCell.Tab.0.right" timestamp="1578564244650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1878" height="87" key="GridCell.Tab.0.right/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564050290" />
-    <state x="553" y="262" key="Vcs.Push.Dialog.v2" timestamp="1578564502349">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="553" y="262" key="Vcs.Push.Dialog.v2/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564502349" />
-    <state x="650" y="329" key="git4idea.merge.GitPullDialog" timestamp="1578564465374">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="650" y="329" key="git4idea.merge.GitPullDialog/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564465374" />
+    <state width="1878" height="87" key="GridCell.Tab.0.right/0.0.1920.1050/3840.0.1920.1050@0.0.1920.1050" timestamp="1578564244650" />
   </component>
 </project>
