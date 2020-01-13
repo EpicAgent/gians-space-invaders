@@ -21,7 +21,7 @@ public class Circle {
     }
 
     static double calculateCircumference(int radius) {
-        double circumference = 2 * radius * radius;
+        double circumference = 2 * PI * radius;
         return circumference;
     }
 }

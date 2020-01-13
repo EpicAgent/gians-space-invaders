@@ -18,7 +18,7 @@ public class Rectangle {
     }
 
     static double calculateCircumference(int width, int height) {
-        double circumference = 2 * width * height;
+        double circumference = 2 * (width + height);
         return circumference;
     }
 }
