@@ -12,7 +12,7 @@ public class KeyEventHandler implements EventHandler<KeyEvent> {
     @Override
     public void handle(KeyEvent event) {
         boolean pressed = event.getEventType() == KeyEvent.KEY_PRESSED;
-        switch (event.getCode()){
+        switch (event.getCode()) {
             case LEFT:
                 isLeftKeyPressed = pressed;
                 break;

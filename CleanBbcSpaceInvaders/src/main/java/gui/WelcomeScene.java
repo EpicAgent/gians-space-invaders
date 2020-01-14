@@ -1,21 +1,22 @@
 package bbcspaceinvaders.gui;
 
+
 import bbcspaceinvaders.common.GUIScene;
 import bbcspaceinvaders.common.Navigator;
 import bbcspaceinvaders.main.Const;
 import javafx.scene.Group;
 
-public class GameWonScene extends GUIScene {
+public class WelcomeScene extends GUIScene {
 
     private static Group group = new Group();
 
-    public GameWonScene(Navigator navigator){
+    public WelcomeScene(Navigator navigator) {
         super(group, navigator);
-        new SpaceKeyScenSwitcher(navigator, EnumScene.WELCOME, this);
+        new SpaceKeyScenSwitcher(navigator, EnumScene.GAME, this);
     }
 
     @Override
     public void onOpen() {
-        getGraphicsContext().drawImage(Const.GAME_WON_BACKGROUND_IMAGE, 0, 0);
+        getGraphicsContext().drawImage(Const.WELCOME_BACKGROUND_IMAGE, 0, 0);
     }
 }

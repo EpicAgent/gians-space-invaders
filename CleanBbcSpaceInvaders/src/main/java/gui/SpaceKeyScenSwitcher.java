@@ -14,7 +14,7 @@ public class SpaceKeyScenSwitcher implements EventHandler<KeyEvent> {
 
     private boolean pressed;
 
-    public SpaceKeyScenSwitcher(Navigator navigator, EnumScene gotoScene, Scene from){
+    public SpaceKeyScenSwitcher(Navigator navigator, EnumScene gotoScene, Scene from) {
         this.navigator = navigator;
         this.gotoScene = gotoScene;
         this.from = from;
@@ -25,9 +25,9 @@ public class SpaceKeyScenSwitcher implements EventHandler<KeyEvent> {
 
     @Override
     public void handle(KeyEvent event) {
-        if(event.getEventType().equals(KeyEvent.KEY_PRESSED) && event.getCode() == KeyCode.SPACE && !pressed) {
+        if (event.getEventType().equals(KeyEvent.KEY_PRESSED) && event.getCode() == KeyCode.SPACE && !pressed) {
             pressed = true;
-        }else if(event.getEventType().equals(KeyEvent.KEY_RELEASED) && pressed){
+        } else if (event.getEventType().equals(KeyEvent.KEY_RELEASED) && pressed) {
             pressed = false;
             navigator.goTo(gotoScene);
         }

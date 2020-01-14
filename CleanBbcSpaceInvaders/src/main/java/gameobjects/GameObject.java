@@ -7,12 +7,12 @@ import javafx.scene.image.Image;
 
 public abstract class GameObject {
 
-    private Space space;
-    private Image image;
     protected double x;
     protected double y;
+    private Space space;
+    private Image image;
 
-    public GameObject(double x, double y, Space space, Image image){
+    public GameObject(double x, double y, Space space, Image image) {
         this.x = x;
         this.y = y;
         this.image = image;
@@ -27,12 +27,12 @@ public abstract class GameObject {
         return y;
     }
 
-    protected void setImage(Image image) {
-        this.image = image;
-    }
-
     public Image getImage() {
         return image;
+    }
+
+    protected void setImage(Image image) {
+        this.image = image;
     }
 
     protected BoundingBox getBoundingBox() {
@@ -43,9 +43,10 @@ public abstract class GameObject {
         return getBoundingBox().intersects(e.getBoundingBox());
     }
 
-    public void update(double deltaInSec){};
+    public void update(double deltaInSec) {
+    }
 
-    public void draw(GraphicsContext gc){
+    public void draw(GraphicsContext gc) {
         gc.drawImage(image, x, y);
     }
 

@@ -12,15 +12,15 @@ public class Navigator {
     private Stage stage;
     private GUIScene activeScene;
 
-    public Navigator(Stage stage){
+    public Navigator(Stage stage) {
         this.stage = stage;
     }
 
-    public void registerScene(EnumScene enumScene, GUIScene scene){
+    public void registerScene(EnumScene enumScene, GUIScene scene) {
         viewMap.put(enumScene, scene);
     }
 
-    public void goTo(EnumScene scene){
+    public void goTo(EnumScene scene) {
         if (activeScene != null) {
             activeScene.onClose();
         }

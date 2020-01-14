@@ -15,13 +15,13 @@ public abstract class FancyAnimationTimer extends AnimationTimer {
     @Override
     public final void handle(long currentTimeInNanoSec) {
         long deltaInNanoSec = currentTimeInNanoSec - lastTimeInNanoSec;
-        double deltaInSec = deltaInNanoSec / 1e9;;
+        double deltaInSec = deltaInNanoSec / 1e9;
 
-        doHandle(deltaInSec);
+        handle(deltaInSec);
 
         lastTimeInNanoSec = currentTimeInNanoSec;
 
     }
 
-    public abstract void doHandle(double deltaInSec);
+    protected abstract void handle(double deltaInSec);
 }
