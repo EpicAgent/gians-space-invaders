@@ -22,20 +22,18 @@ public class Spaceship extends GameObject {
 
     private void handleNavigationEvents(double deltaInSec) {
         double distanceToMove = Const.SPEED_OF_SPACESHIP * deltaInSec;
-        if(keyEventHandler.isRightKeyPressed() && getX() < Const.SCREEN_WIDTH - getImage().getWidth())
-            x+=distanceToMove;
-        if(keyEventHandler.isLeftKeyPressed() && getX() > 0)
-            x-=distanceToMove;
+        if (keyEventHandler.isRightKeyPressed() && getX() < Const.SCREEN_WIDTH - getImage().getWidth())
+            x += distanceToMove;
+        if (keyEventHandler.isLeftKeyPressed() && getX() > 0)
+            x -= distanceToMove;
     }
 
     private void handleShootEvent(double deltaInSec) {
-        if(keyEventHandler.isSpaceKeyPressed() && shipBattery > Const.LASER_SHOUT_TIME){
+        if (keyEventHandler.isSpaceKeyPressed() && shipBattery > Const.LASER_SHOUT_TIME) {
             getSpace().add(new Laser(getX() + (getImage().getWidth() / 2), getY(), getSpace()));
             shipBattery = 0;
         } else {
             shipBattery += deltaInSec;
         }
     }
-
-
 }

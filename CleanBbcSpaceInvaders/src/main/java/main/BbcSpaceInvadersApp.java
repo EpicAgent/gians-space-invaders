@@ -1,17 +1,11 @@
 package bbcspaceinvaders.main;
 
 import bbcspaceinvaders.common.Navigator;
-import bbcspaceinvaders.game.Space;
 import bbcspaceinvaders.gui.*;
 import javafx.application.Application;
-import javafx.scene.canvas.Canvas;
 import javafx.stage.Stage;
 
-public class BbcSpaceInvadersApp  extends Application {
-
-    private Canvas canvas;
-    private Space space;
-
+public class BbcSpaceInvadersApp extends Application {
 
     public static void main(String[] args) {
         launch(args);

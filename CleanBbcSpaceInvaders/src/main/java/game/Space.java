@@ -20,17 +20,18 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
     private Navigator navigator;
     private AnimationTimer gameLoop;
 
-    public Space(KeyEventHandler keyEventHandler, GraphicsContext graphicsContext, Navigator navigator){
+    public Space(KeyEventHandler keyEventHandler, GraphicsContext graphicsContext, Navigator navigator) {
         this.keyEventHandler = keyEventHandler;
         this.graphicsContext = graphicsContext;
+
         this.collisionHandler = new CollisionHandler(this);
         this.navigator = navigator;
     }
 
-    public void start(){
+    public void start() {
         gameLoop = new FancyAnimationTimer() {
             @Override
-            public void doHandle(double deltaInSec) {
+            public void handle(double deltaInSec) {
                 update(deltaInSec);
                 paint();
             }
@@ -38,21 +39,42 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
         gameLoop.start();
     }
 
+    private void stop() {
+        gameLoop.stop();
+        clear();
+    }
 
-
-    public void load(){
+    public void load() {
         add(new Spaceship(keyEventHandler, this));
         add(new Alienship(300, 20, this));
         add(new Alienship(500, 20, this));
     }
 
-    public void paint() {
+
+    private void paint() {
         graphicsContext.clearRect(0, 0, 800, 600);
         graphicsContext.drawImage(Const.GAME_BACKGROUND_IMAGE, 0, 0);
         for (GameObject object : this) {
             object.draw(graphicsContext);
         }
     }
+
+    private void update(double deltaInSec) {
+        for (GameObject object : this) {
+            object.update(deltaInSec);
+        }
+        collisionHandler.handle();
+
+        if (Util.getAllObjectsFromType(Spaceship.class, this).isEmpty()) {
+            navigator.goTo(EnumScene.GAME_OVER);
+            stop();
+        } else if (getAlienShips().isEmpty()) {
+            navigator.goTo(EnumScene.GAME_WON);
+            stop();
+        }
+
+    }
+
 
     public Spaceship getSpaceShip() {
         return Util.getAllObjectsFromType(Spaceship.class, this).get(0);
@@ -70,24 +92,4 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
         return Util.getAllObjectsFromType(Laser.class, this);
     }
 
-    public void update(double deltaInSec) {
-        for (GameObject object : this) {
-            object.update(deltaInSec);
-        }
-        collisionHandler.handle();
-
-        if(Util.getAllObjectsFromType(Spaceship.class, this).isEmpty()){
-            navigator.goTo(EnumScene.GAME_OVER);
-            stop();
-        } else if(getAlienShips().isEmpty()){
-            navigator.goTo(EnumScene.GAME_WON);
-            stop();
-        }
-
-    }
-
-    private void stop() {
-        gameLoop.stop();
-        clear();
-    }
 }

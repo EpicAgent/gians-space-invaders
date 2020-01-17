@@ -9,7 +9,6 @@ public class GameOverScene extends GUIScene {
 
     private static Group group = new Group();
 
-
     public GameOverScene(Navigator navigator) {
         super(group, navigator);
         new SpaceKeyScenSwitcher(navigator, EnumScene.WELCOME, this);
