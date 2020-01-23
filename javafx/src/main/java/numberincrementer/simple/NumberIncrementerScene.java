@@ -55,4 +55,7 @@ public class NumberIncrementerScene {
     }
 
 
+    public Scene getScene() {
+        return scene;
+    }
 }
