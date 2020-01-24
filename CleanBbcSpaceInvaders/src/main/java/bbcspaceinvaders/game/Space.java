@@ -5,7 +5,7 @@ import bbcspaceinvaders.common.Navigator;
 import bbcspaceinvaders.common.Util;
 import bbcspaceinvaders.game.gameobjects.*;
 import bbcspaceinvaders.gui.EnumScene;
-import bbcspaceinvaders.main.Const;
+import bbcspaceinvaders.main.Images;
 import javafx.animation.AnimationTimer;
 import javafx.scene.canvas.GraphicsContext;
 
@@ -50,10 +50,9 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
         add(new Alienship(500, 20, this));
     }
 
-
     private void paint() {
         graphicsContext.clearRect(0, 0, 800, 600);
-        graphicsContext.drawImage(Const.GAME_BACKGROUND_IMAGE, 0, 0);
+        graphicsContext.drawImage(Images.GAME_BACKGROUND_IMAGE, 0, 0);
         for (GameObject object : this) {
             object.draw(graphicsContext);
         }
@@ -72,9 +71,7 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
             navigator.goTo(EnumScene.GAME_WON);
             stop();
         }
-
     }
-
 
     public Spaceship getSpaceShip() {
         return Util.getAllObjectsFromType(Spaceship.class, this).get(0);
@@ -91,5 +88,4 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
     public List<Laser> getLasers() {
         return Util.getAllObjectsFromType(Laser.class, this);
     }
-
 }

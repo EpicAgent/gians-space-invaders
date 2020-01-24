@@ -31,10 +31,6 @@ public abstract class GameObject {
         return image;
     }
 
-    protected void setImage(Image image) {
-        this.image = image;
-    }
-
     protected BoundingBox getBoundingBox() {
         return new BoundingBox(this.x, this.y, image.getWidth(), image.getHeight());
     }

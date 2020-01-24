@@ -23,7 +23,6 @@ public class KeyEventHandler implements EventHandler<KeyEvent> {
                 isSpaceKeyPressed = pressed;
                 break;
         }
-
     }
 
     public boolean isLeftKeyPressed() {
@@ -37,5 +36,4 @@ public class KeyEventHandler implements EventHandler<KeyEvent> {
     public boolean isSpaceKeyPressed() {
         return isSpaceKeyPressed;
     }
-
 }

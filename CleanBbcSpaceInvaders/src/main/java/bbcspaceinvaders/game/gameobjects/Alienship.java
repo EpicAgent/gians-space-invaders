@@ -1,16 +1,18 @@
 package bbcspaceinvaders.game.gameobjects;
 
-
 import bbcspaceinvaders.game.Space;
 import bbcspaceinvaders.main.Const;
+import bbcspaceinvaders.main.Images;
 import javafx.scene.canvas.GraphicsContext;
 
 public class Alienship extends GameObject {
 
+    public static final double SPEED = 100;
+    public static final double BOMB_DROP_CHANCE = 0.2;
     private Direction direction = Direction.RIGHT;
 
     public Alienship(double x, double y, Space space) {
-        super(x, y, space, Const.ALIEN_SHIP_IMAGE);
+        super(x, y, space, Images.ALIEN_SHIP_IMAGE);
     }
 
     @Override
@@ -26,13 +28,13 @@ public class Alienship extends GameObject {
     }
 
     private void dropBomb(double deltaInSec) {
-        if (Math.random() < deltaInSec * Const.BOMB_DROP_CHANCE) {
+        if (Math.random() < deltaInSec * BOMB_DROP_CHANCE) {
             getSpace().add(new Bomb(getBoundingBox().getCenterX(), getBoundingBox().getMaxY(), getSpace()));
         }
     }
 
     private void moveInCurrentDirection(double deltaTimeInSec) {
-        double distanceToMove = Const.SPEED_OF_ALIENSHIP * deltaTimeInSec;
+        double distanceToMove = SPEED * deltaTimeInSec;
 
         if (direction == Direction.RIGHT) {
             x += distanceToMove;
@@ -49,5 +51,4 @@ public class Alienship extends GameObject {
             direction = Direction.RIGHT;
         }
     }
-
 }

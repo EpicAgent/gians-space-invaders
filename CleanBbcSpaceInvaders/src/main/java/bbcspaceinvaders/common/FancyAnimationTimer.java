@@ -20,7 +20,6 @@ public abstract class FancyAnimationTimer extends AnimationTimer {
         handle(deltaInSec);
 
         lastTimeInNanoSec = currentTimeInNanoSec;
-
     }
 
     protected abstract void handle(double deltaInSec);

@@ -11,7 +11,6 @@ public class BbcSpaceInvadersApp extends Application {
         launch(args);
     }
 
-
     @Override
     public void start(Stage stage) {
 
@@ -26,8 +25,5 @@ public class BbcSpaceInvadersApp extends Application {
         navigator.goTo(EnumScene.WELCOME);
 
         stage.show();
-
     }
-
-
 }
