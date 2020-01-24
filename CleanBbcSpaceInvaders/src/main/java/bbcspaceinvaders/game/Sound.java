@@ -9,14 +9,14 @@ public class Sound {
 
     // Need to be a Instance-Variable for the music,
     // else the Garbage Collector stop the music.
-    private static MediaPlayer musikPlayer;
+    private static MediaPlayer musicPlayer;
 
-    public static void play(MusicType musik) {
-        if (musikPlayer != null) {
-            musikPlayer.stop();
+    public static void play(MusicType music) {
+        if (musicPlayer != null) {
+            musicPlayer.stop();
         }
-        musikPlayer = createMediaPlayer(getSoundFileName(musik));
-        musikPlayer.play();
+        musicPlayer = createMediaPlayer(getSoundFileName(music));
+        musicPlayer.play();
     }
 
     public static void play(SoundEffectType soundEffect) {
