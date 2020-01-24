@@ -1,7 +1,7 @@
 package bbcspaceinvaders.game.gameobjects;
 
 import bbcspaceinvaders.game.Space;
-import bbcspaceinvaders.main.Images;
+import bbcspaceinvaders.game.Images;
 
 public class Laser extends GameObject {
 

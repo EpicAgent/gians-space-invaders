@@ -1,8 +1,8 @@
 package bbcspaceinvaders.game.gameobjects;
 
 import bbcspaceinvaders.game.Space;
-import bbcspaceinvaders.main.Const;
-import bbcspaceinvaders.main.Images;
+import bbcspaceinvaders.game.Const;
+import bbcspaceinvaders.game.Images;
 import javafx.scene.canvas.GraphicsContext;
 
 public class Alienship extends GameObject {

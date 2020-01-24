@@ -3,8 +3,7 @@ package bbcspaceinvaders.gui;
 import bbcspaceinvaders.common.BaseScene;
 import bbcspaceinvaders.common.Initializable;
 import bbcspaceinvaders.common.Navigator;
-import bbcspaceinvaders.game.KeyEventHandler;
-import bbcspaceinvaders.game.Space;
+import bbcspaceinvaders.game.*;
 import javafx.scene.Group;
 
 public class GameScene extends BaseScene implements Initializable {
@@ -21,6 +20,8 @@ public class GameScene extends BaseScene implements Initializable {
 
         this.setOnKeyPressed(keyEventHandler);
         this.setOnKeyReleased(keyEventHandler);
+
+        Sound.play(MusicType.BACKGROUND);
 
         Space space = new Space(keyEventHandler, createGraphicsContext(root), navigator);
         space.load();

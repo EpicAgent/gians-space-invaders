@@ -1,0 +1,60 @@
+package bbcspaceinvaders.game;
+
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+
+import java.net.URL;
+
+public class Sound {
+
+    // Need to be a Instance-Variable for the music,
+    // else the Garbage Collector stop the music.
+    private static MediaPlayer musikPlayer;
+
+    public static void play(MusicType musik) {
+        if (musikPlayer != null) {
+            musikPlayer.stop();
+        }
+        musikPlayer = createMediaPlayer(getSoundFileName(musik));
+        musikPlayer.play();
+    }
+
+    public static void play(SoundEffectType soundEffect) {
+        MediaPlayer player = createMediaPlayer(getSoundFileName(soundEffect));
+        player.play();
+    }
+
+    private static MediaPlayer createMediaPlayer(String filePath){
+        filePath = "/sounds/" + filePath;
+        URL url = Sound.class.getResource(filePath);
+        if (url == null) {
+            throw new RuntimeException("Could not load file: " + filePath);
+        }
+
+        String path = Sound.class.getResource(filePath).toString();
+        Media media = new Media(path);
+        return new MediaPlayer(media);
+    }
+
+    private static String getSoundFileName(SoundEffectType soundEffect) {
+        switch (soundEffect) {
+            case LASER_FIRED:
+                return "laser_fired.wav";
+            case SPACESHIP_EXPLODE:
+                return "explode_spaceship.wav";
+            default:
+                throw new RuntimeException("No Soundfilename set for this enum value:" + soundEffect);
+        }
+    }
+
+    private static String getSoundFileName(MusicType music) {
+        switch (music) {
+            case BACKGROUND:
+                return "background_music.wav";
+            case INTRO:
+                return "intro_music.mp3";
+            default:
+                throw new RuntimeException("No Soundfilename set for this enum value:" + music);
+        }
+    }
+}

@@ -1,12 +1,15 @@
 package bbcspaceinvaders.gui;
 
 import bbcspaceinvaders.common.BaseScene;
+import bbcspaceinvaders.common.Initializable;
 import bbcspaceinvaders.common.Navigator;
-import bbcspaceinvaders.main.Images;
+import bbcspaceinvaders.game.Images;
+import bbcspaceinvaders.game.Sound;
+import bbcspaceinvaders.game.SoundEffectType;
 import javafx.scene.Group;
 import javafx.scene.input.KeyCode;
 
-public class GameOverScene extends BaseScene {
+public class GameOverScene extends BaseScene implements Initializable {
 
     private static final Group root = new Group();
 
@@ -15,8 +18,13 @@ public class GameOverScene extends BaseScene {
 
         setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.SPACE){
-                navigator.goTo(EnumScene.WELCOME);
+                navigator.goTo(SceneType.WELCOME);
             }
         });
+    }
+
+    @Override
+    public void onInitialize() {
+        Sound.play(SoundEffectType.SPACESHIP_EXPLODE);
     }
 }

@@ -1,9 +1,6 @@
 package bbcspaceinvaders.game.gameobjects;
 
-import bbcspaceinvaders.game.KeyEventHandler;
-import bbcspaceinvaders.game.Space;
-import bbcspaceinvaders.main.Const;
-import bbcspaceinvaders.main.Images;
+import bbcspaceinvaders.game.*;
 
 public class Spaceship extends GameObject {
 
@@ -35,6 +32,7 @@ public class Spaceship extends GameObject {
     private void handleShootEvent(double deltaInSec) {
         if (keyEventHandler.isSpaceKeyPressed() && shipBattery > LASER_SHOUT_TIME) {
             getSpace().add(new Laser(getX() + (getImage().getWidth() / 2), getY(), getSpace()));
+            Sound.play(SoundEffectType.LASER_FIRED);
             shipBattery = 0;
         } else {
             shipBattery += deltaInSec;

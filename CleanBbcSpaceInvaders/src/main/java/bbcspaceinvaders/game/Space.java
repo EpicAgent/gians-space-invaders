@@ -4,8 +4,7 @@ import bbcspaceinvaders.common.FancyAnimationTimer;
 import bbcspaceinvaders.common.Navigator;
 import bbcspaceinvaders.common.Util;
 import bbcspaceinvaders.game.gameobjects.*;
-import bbcspaceinvaders.gui.EnumScene;
-import bbcspaceinvaders.main.Images;
+import bbcspaceinvaders.gui.SceneType;
 import javafx.animation.AnimationTimer;
 import javafx.scene.canvas.GraphicsContext;
 
@@ -46,8 +45,21 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 
     public void load() {
         add(new Spaceship(keyEventHandler, this));
+        add(new Alienship(100, 20, this));
+        add(new Alienship(200, 20, this));
         add(new Alienship(300, 20, this));
+        add(new Alienship(400, 20, this));
         add(new Alienship(500, 20, this));
+        add(new Alienship(600, 20, this));
+        add(new Alienship(700, 20, this));
+
+        add(new Alienship(100, 120, this));
+        add(new Alienship(200, 120, this));
+        add(new Alienship(300, 120, this));
+        add(new Alienship(400, 120, this));
+        add(new Alienship(500, 120, this));
+        add(new Alienship(600, 120, this));
+        add(new Alienship(700, 120, this));
     }
 
     private void paint() {
@@ -65,10 +77,10 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
         collisionHandler.handle();
 
         if (Util.getAllObjectsFromType(Spaceship.class, this).isEmpty()) {
-            navigator.goTo(EnumScene.GAME_OVER);
+            navigator.goTo(SceneType.GAME_OVER);
             stop();
         } else if (getAlienShips().isEmpty()) {
-            navigator.goTo(EnumScene.GAME_WON);
+            navigator.goTo(SceneType.GAME_WON);
             stop();
         }
     }

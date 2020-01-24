@@ -1,6 +1,6 @@
 package bbcspaceinvaders.common;
 
-import bbcspaceinvaders.main.Const;
+import bbcspaceinvaders.game.Const;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;

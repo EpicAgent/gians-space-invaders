@@ -17,12 +17,12 @@ public class BbcSpaceInvadersApp extends Application {
         stage.setTitle("Bbc SpaceInvaders");
 
         Navigator navigator = new Navigator(stage);
-        navigator.registerScene(EnumScene.WELCOME, new WelcomeScene(navigator));
-        navigator.registerScene(EnumScene.GAME, new GameScene(navigator));
-        navigator.registerScene(EnumScene.GAME_OVER, new GameOverScene(navigator));
-        navigator.registerScene(EnumScene.GAME_WON, new GameWonScene(navigator));
+        navigator.registerScene(SceneType.WELCOME, new WelcomeScene(navigator));
+        navigator.registerScene(SceneType.GAME, new GameScene(navigator));
+        navigator.registerScene(SceneType.GAME_OVER, new GameOverScene(navigator));
+        navigator.registerScene(SceneType.GAME_WON, new GameWonScene(navigator));
 
-        navigator.goTo(EnumScene.WELCOME);
+        navigator.goTo(SceneType.WELCOME);
 
         stage.show();
     }

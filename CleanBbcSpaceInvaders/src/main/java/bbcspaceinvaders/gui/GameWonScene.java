@@ -2,7 +2,9 @@ package bbcspaceinvaders.gui;
 
 import bbcspaceinvaders.common.BaseScene;
 import bbcspaceinvaders.common.Navigator;
-import bbcspaceinvaders.main.Images;
+import bbcspaceinvaders.game.Images;
+import bbcspaceinvaders.game.MusicType;
+import bbcspaceinvaders.game.Sound;
 import javafx.scene.Group;
 import javafx.scene.input.KeyCode;
 
@@ -16,7 +18,7 @@ public class GameWonScene extends BaseScene {
 
         setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.SPACE){
-                navigator.goTo(EnumScene.WELCOME);
+                navigator.goTo(SceneType.WELCOME);
             }
         });
     }
