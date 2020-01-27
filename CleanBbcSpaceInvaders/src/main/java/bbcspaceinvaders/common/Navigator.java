@@ -16,7 +16,7 @@ public class Navigator {
         this.stage = stage;
     }
 
-    public void registerScene(SceneType enumScene, BaseScene scene) {
+    public void registerScene(SceneType enumScene, Scene scene) {
         viewMap.put(enumScene, scene);
     }
 
