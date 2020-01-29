@@ -1,0 +1,18 @@
+package bbcspaceinvaders.game.gameobjects;
+
+import bbcspaceinvaders.game.Space;
+import bbcspaceinvaders.game.Images;
+
+public class Laser extends GameObject {
+
+    public static final double SPEED = 100;
+
+    public Laser(double x, double y, Space space) {
+        super(x, y, space, Images.LASER);
+    }
+
+    @Override
+    public void update(double deltaInSec) {
+        y -= SPEED * deltaInSec;
+    }
+}
