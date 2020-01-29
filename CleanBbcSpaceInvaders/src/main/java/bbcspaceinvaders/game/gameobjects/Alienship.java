@@ -12,7 +12,7 @@ public class Alienship extends GameObject {
     private Direction direction = Direction.RIGHT;
 
     public Alienship(double x, double y, Space space) {
-        super(x, y, space, Images.ALIEN_SHIP_IMAGE);
+        super(x, y, space, Images.ALIEN_SHIP);
     }
 
     @Override

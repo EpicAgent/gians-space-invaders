@@ -14,7 +14,7 @@ public class GameOverScene extends BaseScene implements Initializable {
     private static final Group root = new Group();
 
     public GameOverScene(Navigator navigator) {
-        super(navigator, root, Images.GAME_OVER_BACKGROUND_IMAGE);
+        super(navigator, root, Images.GAME_OVER_BACKGROUND);
 
         setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.SPACE){

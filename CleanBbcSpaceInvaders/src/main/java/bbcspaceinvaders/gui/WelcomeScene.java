@@ -14,7 +14,7 @@ public class WelcomeScene extends BaseScene implements Initializable {
     private static final Group root = new Group();
 
     public WelcomeScene(Navigator navigator) {
-        super(navigator, root, Images.WELCOME_BACKGROUND_IMAGE);
+        super(navigator, root, Images.WELCOME_BACKGROUND);
 
         setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.SPACE){

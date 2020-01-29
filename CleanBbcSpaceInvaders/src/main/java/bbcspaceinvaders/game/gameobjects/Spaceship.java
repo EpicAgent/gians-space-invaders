@@ -11,7 +11,7 @@ public class Spaceship extends GameObject {
     private double shipBattery = 1;
 
     public Spaceship(KeyEventHandler keyEventHandler, Space space) {
-        super(Const.SCREEN_WIDTH / 2, SHIP_Y, space, Images.SPACE_SHIP_IMAGE);
+        super(Const.SCREEN_WIDTH / 2, SHIP_Y, space, Images.SPACE_SHIP);
         this.keyEventHandler = keyEventHandler;
     }
 
@@ -22,7 +22,9 @@ public class Spaceship extends GameObject {
     }
 
     private void handleNavigationEvents(double deltaInSec) {
+
         double distanceToMove = SPEED * deltaInSec;
+
         if (keyEventHandler.isRightKeyPressed() && getX() < Const.SCREEN_WIDTH - getImage().getWidth())
             x += distanceToMove;
         if (keyEventHandler.isLeftKeyPressed() && getX() > 0)

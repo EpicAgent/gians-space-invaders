@@ -13,10 +13,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Space extends CopyOnWriteArrayList<GameObject> {
 
-    private KeyEventHandler keyEventHandler;
-    private GraphicsContext graphicsContext;
+    private final KeyEventHandler keyEventHandler;
+    private final GraphicsContext graphicsContext;
+    private final Navigator navigator;
+
     private CollisionHandler collisionHandler;
-    private Navigator navigator;
     private AnimationTimer gameLoop;
 
     public Space(KeyEventHandler keyEventHandler, GraphicsContext graphicsContext, Navigator navigator) {
@@ -64,7 +65,7 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 
     private void paint() {
         graphicsContext.clearRect(0, 0, 800, 600);
-        graphicsContext.drawImage(Images.GAME_BACKGROUND_IMAGE, 0, 0);
+        graphicsContext.drawImage(Images.GAME_BACKGROUND, 0, 0);
         for (GameObject object : this) {
             object.draw(graphicsContext);
         }

@@ -8,7 +8,7 @@ public class Laser extends GameObject {
     public static final double SPEED = 100;
 
     public Laser(double x, double y, Space space) {
-        super(x, y, space, Images.LASER_IMAGE);
+        super(x, y, space, Images.LASER);
     }
 
     @Override

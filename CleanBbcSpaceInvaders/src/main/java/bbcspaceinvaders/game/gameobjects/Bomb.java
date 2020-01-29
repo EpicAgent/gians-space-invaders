@@ -8,7 +8,7 @@ public class Bomb extends GameObject {
     public static final double SPEED = 100;
 
     public Bomb(double x, double y, Space space) {
-        super(x, y, space, Images.BOMB_IMAGE);
+        super(x, y, space, Images.BOMB);
     }
 
     @Override

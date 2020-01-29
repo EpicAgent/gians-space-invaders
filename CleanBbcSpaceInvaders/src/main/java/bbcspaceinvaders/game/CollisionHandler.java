@@ -8,7 +8,7 @@ import java.util.List;
 
 public class CollisionHandler {
 
-    private Space space;
+    private final Space space;
 
     public CollisionHandler(Space space) {
         this.space = space;

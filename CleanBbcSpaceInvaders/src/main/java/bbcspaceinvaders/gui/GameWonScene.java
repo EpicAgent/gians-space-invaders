@@ -12,7 +12,7 @@ public class GameWonScene extends BaseScene {
     private static final Group root = new Group();
 
     public GameWonScene(Navigator navigator) {
-        super(navigator, root, Images.GAME_WON_BACKGROUND_IMAGE);
+        super(navigator, root, Images.GAME_WON_BACKGROUND);
 
         setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.SPACE){

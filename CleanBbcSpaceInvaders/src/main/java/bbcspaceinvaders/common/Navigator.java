@@ -9,8 +9,8 @@ import java.util.Map;
 
 public class Navigator {
 
+    private final Stage stage;
     private Map<SceneType, Scene> viewMap = new HashMap<>();
-    private Stage stage;
 
     public Navigator(Stage stage) {
         this.stage = stage;
