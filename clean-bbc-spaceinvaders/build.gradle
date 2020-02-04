@@ -16,8 +16,18 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-mainClassName = 'bbcspaceinvaders.main.BbcSpaceInvadersApp'
+mainClassName = 'bbcspaceinvaders.main.Launcher'
 
 javafx {
     modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media', 'javafx.graphics']
+}
+
+jar {
+    manifest{
+        attributes 'Main-Class': 'bbcspaceinvaders.main.Launcher'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }

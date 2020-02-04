@@ -50,9 +50,9 @@ public class Sound {
     private static String getSoundFileName(MusicType music) {
         switch (music) {
             case BACKGROUND:
-                return "background_music.wav";
+                return "music_ingame.wav";
             case INTRO:
-                return "intro_music.mp3";
+                return "music_startscreen.wav";
             default:
                 throw new RuntimeException("No Soundfilename set for this enum value:" + music);
         }
