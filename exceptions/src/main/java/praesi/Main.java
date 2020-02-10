@@ -1,7 +1,6 @@
 package praesi;
 
-public class Demo2 {
-
+public class Main {
     public static void main(String[] args) {
         try {
             /* some Code which throw an Exception */
