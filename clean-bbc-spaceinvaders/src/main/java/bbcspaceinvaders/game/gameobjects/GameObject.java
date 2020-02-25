@@ -1,22 +1,19 @@
 package bbcspaceinvaders.game.gameobjects;
 
-import bbcspaceinvaders.game.Space;
 import javafx.geometry.BoundingBox;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
 public abstract class GameObject {
 
+    private final Image image;
     protected double x;
     protected double y;
-    private Space space;
-    private Image image;
 
-    public GameObject(double x, double y, Space space, Image image) {
+    public GameObject(double x, double y, Image image) {
         this.x = x;
         this.y = y;
         this.image = image;
-        this.space = space;
     }
 
     public double getX() {
@@ -39,14 +36,9 @@ public abstract class GameObject {
         return getBoundingBox().intersects(e.getBoundingBox());
     }
 
-    public void update(double deltaInSec) {
-    }
+    public abstract void update(double deltaInSec);
 
     public void draw(GraphicsContext gc) {
         gc.drawImage(image, x, y);
-    }
-
-    protected Space getSpace() {
-        return space;
     }
 }

@@ -4,12 +4,15 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Sound {
 
     // Need to be a Instance-Variable for the music,
     // else the Garbage Collector stop the music.
     private static MediaPlayer musicPlayer;
+    private final static Map<String, Media> cache = new HashMap<>();
 
     public static void play(MusicType music) {
         if (musicPlayer != null) {
@@ -26,14 +29,17 @@ public class Sound {
 
     private static MediaPlayer createMediaPlayer(String filePath){
         filePath = "/sounds/" + filePath;
-        URL url = Sound.class.getResource(filePath);
-        if (url == null) {
-            throw new RuntimeException("Could not load file: " + filePath);
+
+        if (!cache.containsKey(filePath)){
+            URL url = Sound.class.getResource(filePath);
+            if (url == null) {
+                throw new RuntimeException("Could not load file: " + filePath);
+            }
+
+            cache.put(filePath, new Media(url.toString()));
         }
 
-        String path = Sound.class.getResource(filePath).toString();
-        Media media = new Media(path);
-        return new MediaPlayer(media);
+        return new MediaPlayer(cache.get(filePath));
     }
 
     private static String getSoundFileName(SoundEffectType soundEffect) {

@@ -1,11 +1,9 @@
 package bbcspaceinvaders.game;
 
-import bbcspaceinvaders.common.FancyAnimationTimer;
 import bbcspaceinvaders.common.Navigator;
 import bbcspaceinvaders.common.Util;
 import bbcspaceinvaders.game.gameobjects.*;
 import bbcspaceinvaders.gui.SceneType;
-import javafx.animation.AnimationTimer;
 import javafx.scene.canvas.GraphicsContext;
 
 import java.util.List;
@@ -14,34 +12,16 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Space extends CopyOnWriteArrayList<GameObject> {
 
     private final KeyEventHandler keyEventHandler;
-    private final GraphicsContext graphicsContext;
+    private final Runnable gameLoopStopper;
     private final Navigator navigator;
 
-    private CollisionHandler collisionHandler;
-    private AnimationTimer gameLoop;
+    private final CollisionHandler collisionHandler;
 
-    public Space(KeyEventHandler keyEventHandler, GraphicsContext graphicsContext, Navigator navigator) {
+    public Space(KeyEventHandler keyEventHandler, Navigator navigator, Runnable gameLoopStopper) {
         this.keyEventHandler = keyEventHandler;
-        this.graphicsContext = graphicsContext;
-
+        this.gameLoopStopper = gameLoopStopper;
         this.collisionHandler = new CollisionHandler(this);
         this.navigator = navigator;
-    }
-
-    public void start() {
-        gameLoop = new FancyAnimationTimer() {
-            @Override
-            public void handle(double deltaInSec) {
-                update(deltaInSec);
-                paint();
-            }
-        };
-        gameLoop.start();
-    }
-
-    private void stop() {
-        gameLoop.stop();
-        clear();
     }
 
     public void load() {
@@ -63,15 +43,15 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
         add(new Alienship(700, 120, this));
     }
 
-    private void paint() {
-        graphicsContext.clearRect(0, 0, 800, 600);
-        graphicsContext.drawImage(Images.GAME_BACKGROUND, 0, 0);
+    public void draw(GraphicsContext gc) {
+        gc.clearRect(0, 0, Const.SCREEN_WIDTH, Const.SCREEN_HEIGHT);
+        gc.drawImage(Images.GAME_BACKGROUND, 0, 0);
         for (GameObject object : this) {
-            object.draw(graphicsContext);
+            object.draw(gc);
         }
     }
 
-    private void update(double deltaInSec) {
+    public void update(double deltaInSec) {
         for (GameObject object : this) {
             object.update(deltaInSec);
         }
@@ -100,5 +80,10 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 
     public List<Laser> getLasers() {
         return Util.getAllObjectsFromType(Laser.class, this);
+    }
+
+    private void stop() {
+        gameLoopStopper.run();
+        clear();
     }
 }

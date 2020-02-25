@@ -1,14 +1,13 @@
 package bbcspaceinvaders.game.gameobjects;
 
-import bbcspaceinvaders.game.Space;
 import bbcspaceinvaders.game.Images;
 
 public class Laser extends GameObject {
 
-    public static final double SPEED = 100;
+    private final static double SPEED = 100;
 
-    public Laser(double x, double y, Space space) {
-        super(x, y, space, Images.LASER);
+    public Laser(double x, double y) {
+        super(x, y, Images.LASER);
     }
 
     @Override

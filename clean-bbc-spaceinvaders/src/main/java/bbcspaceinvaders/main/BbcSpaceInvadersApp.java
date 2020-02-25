@@ -7,7 +7,6 @@ import javafx.stage.Stage;
 
 public class BbcSpaceInvadersApp extends Application {
 
-
     @Override
     public void start(Stage stage) {
 

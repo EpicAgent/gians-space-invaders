@@ -6,15 +6,12 @@ import bbcspaceinvaders.common.Navigator;
 import bbcspaceinvaders.game.Images;
 import bbcspaceinvaders.game.MusicType;
 import bbcspaceinvaders.game.Sound;
-import javafx.scene.Group;
 import javafx.scene.input.KeyCode;
 
 public class WelcomeScene extends BaseScene implements Initializable {
 
-    private static final Group root = new Group();
-
     public WelcomeScene(Navigator navigator) {
-        super(navigator, root, Images.WELCOME_BACKGROUND);
+        super(navigator, Images.WELCOME_BACKGROUND);
 
         setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.SPACE){

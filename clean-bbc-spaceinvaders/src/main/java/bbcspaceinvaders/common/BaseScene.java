@@ -10,25 +10,22 @@ import javafx.scene.image.Image;
 public abstract class BaseScene extends Scene {
 
     protected final Navigator navigator;
+    protected final Canvas canvas;
 
-    public BaseScene(Navigator navigator, Group group) {
-        super(group);
+    public BaseScene(Navigator navigator) {
+        super(new Group());
         this.navigator = navigator;
+        canvas = new Canvas(Const.SCREEN_WIDTH, Const.SCREEN_HEIGHT);
+        ((Group)getRoot()).getChildren().add(canvas);
     }
 
-    public BaseScene(Navigator navigator, Group group, Image backgroundImage) {
-        this(navigator, group);
-        drawBackgroundImage(backgroundImage, group);
+    public BaseScene(Navigator navigator, Image backgroundImage) {
+        this(navigator);
+        drawBackgroundImage(backgroundImage);
     }
 
-    protected GraphicsContext createGraphicsContext(Group group){
-        Canvas canvas = new Canvas(Const.SCREEN_WIDTH, Const.SCREEN_HEIGHT);
-        group.getChildren().add(canvas);
-        return canvas.getGraphicsContext2D();
-    }
-
-    private void drawBackgroundImage(Image backgroundImage, Group group){
-        GraphicsContext gc = createGraphicsContext(group);
+    private void drawBackgroundImage(Image backgroundImage){
+        GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.drawImage(backgroundImage, 0, 0);
     }
 }

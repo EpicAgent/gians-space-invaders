@@ -17,10 +17,10 @@ public abstract class FancyAnimationTimer extends AnimationTimer {
         long deltaInNanoSec = currentTimeInNanoSec - lastTimeInNanoSec;
         double deltaInSec = deltaInNanoSec / 1e9;
 
-        handle(deltaInSec);
+        doHandle(deltaInSec);
 
         lastTimeInNanoSec = currentTimeInNanoSec;
     }
 
-    protected abstract void handle(double deltaInSec);
+    protected abstract void doHandle(double deltaInSec);
 }

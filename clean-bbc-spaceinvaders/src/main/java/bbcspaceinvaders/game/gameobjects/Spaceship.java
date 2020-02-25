@@ -4,15 +4,17 @@ import bbcspaceinvaders.game.*;
 
 public class Spaceship extends GameObject {
 
-    public static final double SPEED = 100;
-    public static final double SHIP_Y = 480;
-    public static final double LASER_SHOUT_TIME = 1;
-    private KeyEventHandler keyEventHandler;
+    private final static double SPEED = 100;
+    private final static double SHIP_Y = 480;
+    private final static double LASER_SHOUT_TIME = 1;
+    private final KeyEventHandler keyEventHandler;
+    private final Space space;
     private double shipBattery = 1;
 
     public Spaceship(KeyEventHandler keyEventHandler, Space space) {
-        super(Const.SCREEN_WIDTH / 2, SHIP_Y, space, Images.SPACE_SHIP);
+        super(Const.SCREEN_WIDTH / 2, SHIP_Y, Images.SPACE_SHIP);
         this.keyEventHandler = keyEventHandler;
+        this.space = space;
     }
 
     @Override
@@ -33,7 +35,7 @@ public class Spaceship extends GameObject {
 
     private void handleShootEvent(double deltaInSec) {
         if (keyEventHandler.isSpaceKeyPressed() && shipBattery > LASER_SHOUT_TIME) {
-            getSpace().add(new Laser(getX() + (getImage().getWidth() / 2), getY(), getSpace()));
+            space.add(new Laser(getX() + (getImage().getWidth() / 2), getY()));
             Sound.play(SoundEffectType.LASER_FIRED);
             shipBattery = 0;
         } else {

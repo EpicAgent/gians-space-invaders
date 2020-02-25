@@ -1,21 +1,25 @@
 package bbcspaceinvaders.gui;
 
 import bbcspaceinvaders.common.BaseScene;
+import bbcspaceinvaders.common.FancyAnimationTimer;
 import bbcspaceinvaders.common.Initializable;
 import bbcspaceinvaders.common.Navigator;
-import bbcspaceinvaders.game.*;
-import javafx.scene.Group;
+import bbcspaceinvaders.game.KeyEventHandler;
+import bbcspaceinvaders.game.MusicType;
+import bbcspaceinvaders.game.Sound;
+import bbcspaceinvaders.game.Space;
 
 public class GameScene extends BaseScene implements Initializable {
 
-    private static final Group root = new Group();
+    private FancyAnimationTimer gameLoop;
 
     public GameScene(Navigator navigator){
-        super(navigator, root);
+        super(navigator);
     }
 
     @Override
     public void onInitialize() {
+
         KeyEventHandler keyEventHandler = new KeyEventHandler();
 
         this.setOnKeyPressed(keyEventHandler);
@@ -23,8 +27,16 @@ public class GameScene extends BaseScene implements Initializable {
 
         Sound.play(MusicType.BACKGROUND);
 
-        Space space = new Space(keyEventHandler, createGraphicsContext(root), navigator);
+        Space space = new Space(keyEventHandler, navigator, () -> gameLoop.stop());
         space.load();
-        space.start();
+
+        gameLoop = new FancyAnimationTimer() {
+            @Override
+            public void doHandle(double deltaInSec) {
+                space.update(deltaInSec);
+                space.draw(canvas.getGraphicsContext2D());
+            }
+        };
+        gameLoop.start();
     }
 }
