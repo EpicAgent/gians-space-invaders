@@ -13,5 +13,23 @@ public class Aufgabe1 {
         } else /* Kommentar */  {
             System.out.println(text);
         }
+
+
+        int i = 3;
+        switch (i) {
+            case 1:
+                System.out.println("Eins");
+                break;
+            case 2:
+                System.out.println("Zwei");
+                break;
+            case 3:
+            case 4:
+                System.out.println("Drei oder Vier");
+            break;
+            default:
+                System.out.println("Andere Zahl");
+        }
+
     }
 }
