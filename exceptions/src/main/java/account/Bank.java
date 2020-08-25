@@ -9,12 +9,7 @@ public class Bank {
 
     public void depositToAll(int amount) {
         for (Account account : accounts) {
-            try {
-                account.deposit(amount);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
-            }
-
+            account.deposit(amount);
         }
     }
 

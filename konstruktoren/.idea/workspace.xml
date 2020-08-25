@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d54977a6-3fba-4cd6-beb2-3343047c8eb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/AccountApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/BankApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exceptions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exceptions/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../klassen/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../klassen/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../klassen/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../klassen/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clean-bbc-spaceinvaders/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clean-bbc-spaceinvaders/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clean-bbc-spaceinvaders/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clean-bbc-spaceinvaders/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exceptions/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../exceptions/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exceptions/src/main/java/account/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exceptions/src/main/java/account/BankApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exceptions/src/main/java/account/BankApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../syntax/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../syntax/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../syntax/src/main/java/ch/bbcag/syntax/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../syntax/src/main/java/ch/bbcag/syntax/Aufgabe1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exceptions" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -94,9 +107,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1500" y="459" key="FileChooserDialogImpl" timestamp="1598258168672">
-      <screen x="0" y="0" width="3440" height="1410" />
+    <state x="837" y="342" key="FileChooserDialogImpl" timestamp="1598342686133">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1500" y="459" key="FileChooserDialogImpl/-3840.-369.1920.1065/0.0.3440.1410@0.0.3440.1410" timestamp="1598258168672" />
+    <state x="837" y="342" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1598342686133" />
   </component>
 </project>
