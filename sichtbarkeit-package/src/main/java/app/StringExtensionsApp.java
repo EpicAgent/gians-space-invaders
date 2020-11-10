@@ -8,6 +8,6 @@ public class StringExtensionsApp {
         System.out.println("reversed: " + StringExtensions.reverse(text));
 
         String zahl = "12345";
-        System.out.println(StringExtensions.sumOfTheDigits(zahl)); // Quersumme
+        System.out.println(StringExtensions.quersum(zahl)); // Quersumme
     }
 }

@@ -7,7 +7,7 @@ public class StringExtensions {
         System.out.println("reversed: " + reverse(text));
 
         String zahl = "12345";
-        System.out.println(sumOfTheDigits(zahl)); // Quersumme
+        System.out.println(quersum(zahl)); // Quersumme
     }
 
     public static String reverse(String text){
@@ -18,7 +18,7 @@ public class StringExtensions {
         return reversedText;
     }
 
-    public static int sumOfTheDigits(String value) {
+    public static int quersum(String value) {
         int result = 0;
         for ( int i = 0; i < value.length(); i++ )
             result += (value.charAt( i ) - '0');
