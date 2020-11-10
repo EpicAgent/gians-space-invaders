@@ -17,9 +17,9 @@ public class StringExtensionsTest {
 
     @ParameterizedTest
     @CsvSource({"0, 0", "12, 3", "0123, 6", "1000, 1" })
-    void sumOfTheDigits(String testData, int result) {
+    void sum(String testData, int result) {
         // Act
-        int actual = StringExtensions.sumOfTheDigits(testData);
+        int actual = StringExtensions.sum(testData);
 
         // Assert
         assertEquals(result, actual);
