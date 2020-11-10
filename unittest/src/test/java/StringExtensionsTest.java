@@ -19,7 +19,7 @@ public class StringExtensionsTest {
     @CsvSource({"0, 0", "12, 3", "0123, 6", "1000, 1" })
     void sum(String testData, int result) {
         // Act
-        int actual = StringExtensions.sum(testData);
+        int actual = StringExtensions.quersum(testData);
 
         // Assert
         assertEquals(result, actual);
