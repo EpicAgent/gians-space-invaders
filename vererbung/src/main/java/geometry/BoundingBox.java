@@ -3,26 +3,26 @@ package geometry;
 public class BoundingBox extends Rectangle {
 
     public BoundingBox(Point topLeft, int height, int width) {
-        super(topLeft, height, width);
+        super(topLeft, width, height);
     }
 
     public Point getPointTopLeft() {
-        return topLeft;
+        return position;
     }
 
     public Point getPointTopRight() {
-        return new Point(topLeft.getX() + width, topLeft.getY());
+        return new Point(position.getX() + getWidth(), position.getY());
     }
 
     public Point getPointBottomLeft() {
-        return new Point(topLeft.getX(), topLeft.getY() + height );
+        return new Point(position.getX(), position.getY() + getHeight());
     }
 
     public Point getPointBottomRight() {
-        return new Point(topLeft.getX() + width, topLeft.getY() + height);
+        return new Point(position.getX() + getWidth(), position.getY() + getHeight());
     }
 
-    public boolean isPointInsideRectangle(Point point){
+    public boolean isPointInsideRectangle(Point point) {
         return point.getX() >= getPointBottomLeft().getX() && point.getX() <= getPointBottomRight().getX() &&
                 point.getY() >= getPointTopLeft().getY() && point.getY() <= getPointBottomLeft().getY();
     }
