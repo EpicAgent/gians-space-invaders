@@ -1,6 +1,6 @@
 # Bbc SpaceInvaders
-Dies ist die Muster Inplementierung des offiziellen Bbc SpaceInvader Tutorials.
-Der Code zeigt die Verwendung der wichtigsten OOP Konzepe (Kapselung / Vererbung / Polymorphismus) und bietet eine Grundlage für viele andere Arcade-Games.
+Dies ist die Musterinplementierung des offiziellen Bbc SpaceInvader Tutorials.
+Der Code zeigt die Verwendung der wichtigsten OOP Konzepte (Kapselung / Vererbung / Polymorphismus) und bietet eine Grundlage für viele andere Arcade-Games.
 
 ![Mockups](Mockups.png)
 
