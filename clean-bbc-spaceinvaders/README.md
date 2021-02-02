@@ -1,6 +1,7 @@
-# BBC SpaceInvaders
+# Bbc SpaceInvaders
 Dies ist die Muster Inplementierung des offiziellen Bbc SpaceInvader Tutorials.
 Der Code zeigt die Verwendung der wichtigsten OOP Konzepe (Kapselung / Vererbung / Polymorphismus) und bietet eine Grundlage für viele andere Arcade-Games.
+![Mockups](Mockups.png)
 
 ## Spezial Features
 - Musik und Soundeffekte
@@ -11,7 +12,7 @@ Der Code zeigt die Verwendung der wichtigsten OOP Konzepe (Kapselung / Vererbung
 - Gradle als Build Tool
 
 ### Achitektur
-![Image of Yaktocat](Classdiagram.png)
+![Classdiagram](Classdiagram.png)
 Der JavaFX UI Code wurde zu grossen Teilen vom Gamecode entkoppelt.
 
 ### TODO's
