@@ -23,7 +23,7 @@ Der Business Code im Order Game sollte keine Abhängigkeiten zu Java FX Packages
 Der Code wurde mit Java SDK 13 und Java FX 12.0.1 getestet.
 ```sh
 $ git clone https:/.../clean-bbc-spaceinvaders.git
-$ java -jar \build\lib\clean-bbc-spaceinvaders-1.0-SNAPSHOT.jar)
+$ java -jar \build\lib\clean-bbc-spaceinvaders-1.0-SNAPSHOT.jar
 ```
 [//]: #
 [fx]: <https://openjfx.io/>
