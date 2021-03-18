@@ -4,11 +4,11 @@ public class Answer {
     private String answerText;
     private boolean isCorrect;
 
-    public void setCorrect(boolean correct) {
-        isCorrect = correct;
+    public boolean isCorrect() {
+        return isCorrect;
     }
 
-    public void isCorrect(boolean correct) {
+    public void setCorrect(boolean correct) {
         isCorrect = correct;
     }
 

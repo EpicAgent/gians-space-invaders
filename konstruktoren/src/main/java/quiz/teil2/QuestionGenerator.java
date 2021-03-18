@@ -87,7 +87,7 @@ public class QuestionGenerator {
             JsonArray incorrectAnswers = getIncorrectAnswers(jsonQuestion);
             Answer[] answers = new Answer[incorrectAnswers.size() + 1]; // +1 because we also want the correct answer
             Answer correctAnswer = new Answer();
-            correctAnswer.isCorrect(true);
+            correctAnswer.setCorrect(true);
             correctAnswer.setAnswerText(getCorrectAnswerText(jsonQuestion));
             answers[0] = correctAnswer;
 
