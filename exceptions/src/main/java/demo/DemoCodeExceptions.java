@@ -1,16 +1,27 @@
 package demo;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
+
 import javax.swing.*;
 
-public class DemoCodeExceptions {
+public class DemoCodeExceptions extends Application {
 
-    public static void main(String[] args) throws Exception {
+    @Override
+    public void start(Stage primaryStage) {
 
+        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            public void uncaughtException(Thread t, Throwable e) {
+                // -> Show a Message to user
+                // -> Do logging
+                JOptionPane.showMessageDialog(null, "Something goes wrong!");
+            }
+        });
         // Part 1: Method with Exception
         // - Show and explain with debugger what happen if an exception is not handled (callstack, error message, ...)
         // - main() throws Exception -> delete it.
 
-        Util.someMethodWithException();
+        //Util.someMethodWithException();
 
         // Part 2: Handle an Exception
         // Show how to handle a exception
@@ -42,13 +53,7 @@ public class DemoCodeExceptions {
 
         // Part 4: Best-practice: Use only RuntimeException
         // Catch Exceptions and rethrow it as RuntimeExceptions so you can handle it once in a global ExceptionHandler
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-            public void uncaughtException(Thread t, Throwable e) {
-                // -> Show a Message to user
-                // -> Do logging
-                JOptionPane.showMessageDialog(null, "Something goes wrong!");
-            }
-        });
+
 
         Util.someMethodWithRuntimeException();
     }
