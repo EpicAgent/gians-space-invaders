@@ -8,7 +8,7 @@ public class Answer {
         return isCorrect;
     }
 
-    public void isCorrect(boolean correct) {
+    public void setCorrect(boolean correct) {
         isCorrect = correct;
     }
 
