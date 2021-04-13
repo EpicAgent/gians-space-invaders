@@ -4,12 +4,16 @@ import javax.swing.*;
 
 public class Aufgabe6 {
     public static void main(String[] args) {
-        String name = JOptionPane.showInputDialog(null, "Bitte Namen eingeben");
+        while(true) {
 
-        if (name.equals("MeinName")) {
-            System.out.println("Das bin ich!");
-        } else {
-            System.out.println("Das bin ich nicht!");
+            String name = JOptionPane.showInputDialog(null, "Bitte Namen eingeben");
+
+            if (name.equals("MeinName")) {
+                System.out.println("Das bin ich!");
+                return;
+            } else {
+                System.out.println("Das bin ich nicht!");
+            }
         }
     }
 }
