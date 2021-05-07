@@ -26,21 +26,11 @@ public class Space extends CopyOnWriteArrayList<GameObject> {
 
     public void load() {
         add(new Spaceship(keyEventHandler, this));
-        add(new Alienship(100, 20, this));
-        add(new Alienship(200, 20, this));
-        add(new Alienship(300, 20, this));
-        add(new Alienship(400, 20, this));
-        add(new Alienship(500, 20, this));
-        add(new Alienship(600, 20, this));
-        add(new Alienship(700, 20, this));
-
-        add(new Alienship(100, 120, this));
-        add(new Alienship(200, 120, this));
-        add(new Alienship(300, 120, this));
-        add(new Alienship(400, 120, this));
-        add(new Alienship(500, 120, this));
-        add(new Alienship(600, 120, this));
-        add(new Alienship(700, 120, this));
+        for (int y = 20; y <= 120 ; y+= 100) {
+            for (int x = 100; x <= 700; x+= 100) {
+                add(new Alienship(x, y, this));
+            }
+        }
     }
 
     public void draw(GraphicsContext gc) {
