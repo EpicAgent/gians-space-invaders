@@ -2,7 +2,7 @@
 Dies ist die Musterinplementierung des offiziellen Bbc SpaceInvader Tutorials.
 Der Code zeigt die Verwendung der wichtigsten OOP Konzepte (Kapselung / Vererbung / Polymorphismus) und bietet eine Grundlage für viele andere Arcade-Games.
 
-![Mockups](Mockups.png)
+![Mockups](docs/Mockups.png)
 
 ## Spezial Features
 - Musik und Soundeffekte
@@ -13,7 +13,7 @@ Der Code zeigt die Verwendung der wichtigsten OOP Konzepte (Kapselung / Vererbun
 - Gradle als Build Tool
 
 ### Achitektur
-![Classdiagram](Classdiagram.png)
+![Classdiagram](docs/Classdiagram.png)
 Der JavaFX UI Code wurde zu grossen Teilen vom Gamecode entkoppelt.
 
 ### TODO's
