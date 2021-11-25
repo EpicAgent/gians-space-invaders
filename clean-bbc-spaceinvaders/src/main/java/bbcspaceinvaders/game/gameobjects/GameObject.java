@@ -41,4 +41,5 @@ public abstract class GameObject {
     public void draw(GraphicsContext gc) {
         gc.drawImage(image, x, y);
     }
+
 }

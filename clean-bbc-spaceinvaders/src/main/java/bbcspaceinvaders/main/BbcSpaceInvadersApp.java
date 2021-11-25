@@ -1,7 +1,11 @@
 package bbcspaceinvaders.main;
 
 import bbcspaceinvaders.common.Navigator;
-import bbcspaceinvaders.gui.*;
+import bbcspaceinvaders.gui.GameOverScene;
+import bbcspaceinvaders.gui.GameScene;
+import bbcspaceinvaders.gui.GameWonScene;
+import bbcspaceinvaders.gui.SceneType;
+import bbcspaceinvaders.gui.WelcomeScene;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -12,7 +16,7 @@ public class BbcSpaceInvadersApp extends Application {
 
         stage.setTitle("Bbc SpaceInvaders");
 
-        Navigator navigator = new Navigator(stage);
+        Navigator<SceneType> navigator = new Navigator<>(stage);
         navigator.registerScene(SceneType.WELCOME, new WelcomeScene(navigator));
         navigator.registerScene(SceneType.GAME, new GameScene(navigator));
         navigator.registerScene(SceneType.GAME_OVER, new GameOverScene(navigator));
@@ -22,4 +26,5 @@ public class BbcSpaceInvadersApp extends Application {
 
         stage.show();
     }
+
 }

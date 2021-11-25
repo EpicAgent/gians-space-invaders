@@ -1,6 +1,11 @@
 package bbcspaceinvaders.game.gameobjects;
 
-import bbcspaceinvaders.game.*;
+import bbcspaceinvaders.game.Const;
+import bbcspaceinvaders.game.GameObjects;
+import bbcspaceinvaders.game.Images;
+import bbcspaceinvaders.game.KeyEventHandler;
+import bbcspaceinvaders.game.Sound;
+import bbcspaceinvaders.game.SoundEffectType;
 
 public class Spaceship extends GameObject {
 
@@ -8,13 +13,13 @@ public class Spaceship extends GameObject {
     private final static double SHIP_Y = 480;
     private final static double LASER_SHOT_TIME = 1;
     private final KeyEventHandler keyEventHandler;
-    private final Space space;
+    private final GameObjects gameObjects;
     private double shipBattery = 1;
 
-    public Spaceship(KeyEventHandler keyEventHandler, Space space) {
+    public Spaceship(KeyEventHandler keyEventHandler, GameObjects gameObjects) {
         super(Const.SCREEN_WIDTH / 2, SHIP_Y, Images.SPACE_SHIP);
         this.keyEventHandler = keyEventHandler;
-        this.space = space;
+        this.gameObjects = gameObjects;
     }
 
     @Override
@@ -35,11 +40,12 @@ public class Spaceship extends GameObject {
 
     private void handleShootEvent(double deltaInSec) {
         if (keyEventHandler.isSpaceKeyPressed() && shipBattery > LASER_SHOT_TIME) {
-            space.add(new Laser(getX() + (getImage().getWidth() / 2), getY()));
+            gameObjects.add(new Laser(getX() + (getImage().getWidth() / 2), getY()));
             Sound.play(SoundEffectType.LASER_FIRED);
             shipBattery = 0;
         } else {
             shipBattery += deltaInSec;
         }
     }
+
 }

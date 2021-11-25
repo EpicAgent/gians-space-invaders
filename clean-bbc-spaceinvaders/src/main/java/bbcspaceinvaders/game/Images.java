@@ -16,4 +16,5 @@ public class Images {
     private static Image getImage(String imagePath) {
         return new Image("/images/" + imagePath);
     }
+
 }

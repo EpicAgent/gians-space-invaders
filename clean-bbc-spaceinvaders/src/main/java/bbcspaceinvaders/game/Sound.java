@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class Sound {
 
-    // Need to be a Instance-Variable for the music,
+    // Need to be an Instance-Variable for the music,
     // else the Garbage Collector stop the music.
     private static MediaPlayer musicPlayer;
     private final static Map<String, Media> cache = new HashMap<>();
@@ -27,10 +27,10 @@ public class Sound {
         player.play();
     }
 
-    private static MediaPlayer createMediaPlayer(String filePath){
+    private static MediaPlayer createMediaPlayer(String filePath) {
         filePath = "/sounds/" + filePath;
 
-        if (!cache.containsKey(filePath)){
+        if (!cache.containsKey(filePath)) {
             URL url = Sound.class.getResource(filePath);
             if (url == null) {
                 throw new RuntimeException("Could not load file: " + filePath);
@@ -63,4 +63,5 @@ public class Sound {
                 throw new RuntimeException("No Soundfilename set for this enum value:" + music);
         }
     }
+
 }

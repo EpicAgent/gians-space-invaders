@@ -13,7 +13,7 @@ public class GameScene extends BaseScene implements Initializable {
 
     private FancyAnimationTimer gameLoop;
 
-    public GameScene(Navigator navigator){
+    public GameScene(Navigator<SceneType> navigator) {
         super(navigator);
     }
 
@@ -33,10 +33,11 @@ public class GameScene extends BaseScene implements Initializable {
         gameLoop = new FancyAnimationTimer() {
             @Override
             public void doHandle(double deltaInSec) {
-            space.update(deltaInSec);
-            space.draw(canvas.getGraphicsContext2D());
+                space.update(deltaInSec);
+                space.draw(canvas.getGraphicsContext2D());
             }
         };
         gameLoop.start();
     }
+
 }

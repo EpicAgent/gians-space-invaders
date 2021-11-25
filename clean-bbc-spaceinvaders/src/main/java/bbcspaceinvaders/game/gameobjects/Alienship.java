@@ -1,19 +1,19 @@
 package bbcspaceinvaders.game.gameobjects;
 
 import bbcspaceinvaders.game.Const;
+import bbcspaceinvaders.game.GameObjects;
 import bbcspaceinvaders.game.Images;
-import bbcspaceinvaders.game.Space;
 
 public class Alienship extends GameObject {
 
     private final static double SPEED = 100;
     private final static double BOMB_DROP_CHANCE = 0.2;
-    private final Space space;
+    private final GameObjects gameObjects;
     private Direction direction = Direction.RIGHT;
 
-    public Alienship(double x, double y, Space space) {
+    public Alienship(double x, double y, GameObjects gameObjects) {
         super(x, y, Images.ALIEN_SHIP);
-        this.space = space;
+        this.gameObjects = gameObjects;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class Alienship extends GameObject {
 
     private void dropBomb(double deltaInSec) {
         if (Math.random() < deltaInSec * BOMB_DROP_CHANCE) {
-            space.add(new Bomb(getBoundingBox().getCenterX(), getBoundingBox().getMaxY()));
+            gameObjects.add(new Bomb(getBoundingBox().getCenterX(), getBoundingBox().getMaxY()));
         }
     }
 
@@ -47,4 +47,5 @@ public class Alienship extends GameObject {
             direction = Direction.RIGHT;
         }
     }
+
 }

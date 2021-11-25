@@ -14,4 +14,5 @@ public class Bomb extends GameObject {
     public void update(double deltaInSec) {
         y += SPEED * deltaInSec;
     }
+
 }

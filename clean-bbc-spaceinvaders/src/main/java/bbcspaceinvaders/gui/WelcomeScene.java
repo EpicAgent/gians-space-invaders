@@ -10,11 +10,11 @@ import javafx.scene.input.KeyCode;
 
 public class WelcomeScene extends BaseScene implements Initializable {
 
-    public WelcomeScene(Navigator navigator) {
+    public WelcomeScene(Navigator<SceneType> navigator) {
         super(navigator, Images.WELCOME_BACKGROUND);
 
         setOnKeyPressed(e -> {
-            if (e.getCode() == KeyCode.SPACE){
+            if (e.getCode() == KeyCode.SPACE) {
                 navigator.goTo(SceneType.GAME);
             }
         });
@@ -24,4 +24,5 @@ public class WelcomeScene extends BaseScene implements Initializable {
     public void onInitialize() {
         Sound.play(MusicType.INTRO);
     }
+
 }

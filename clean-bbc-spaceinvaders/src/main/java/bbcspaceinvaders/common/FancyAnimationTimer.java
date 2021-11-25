@@ -23,4 +23,5 @@ public abstract class FancyAnimationTimer extends AnimationTimer {
     }
 
     protected abstract void doHandle(double deltaInSec);
+
 }

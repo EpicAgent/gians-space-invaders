@@ -14,4 +14,5 @@ public class Laser extends GameObject {
     public void update(double deltaInSec) {
         y -= SPEED * deltaInSec;
     }
+
 }

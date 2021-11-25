@@ -8,10 +8,10 @@ import java.util.List;
 
 public class CollisionHandler {
 
-    private final Space space;
+    private final GameObjects gameObjects;
 
-    public CollisionHandler(Space space) {
-        this.space = space;
+    public CollisionHandler(GameObjects gameObjects) {
+        this.gameObjects = gameObjects;
     }
 
     public void handle() {
@@ -21,31 +21,32 @@ public class CollisionHandler {
     }
 
     private void handleLaserAlienShipCollisions() {
-        for (Laser laser : space.getLasers()) {
-            handleCollision(laser, space.getAlienShips());
+        for (Laser laser : gameObjects.getLasers()) {
+            handleCollision(laser, gameObjects.getAlienShips());
         }
     }
 
     private void handleLaserBombCollisions() {
-        for (Laser laser : space.getLasers()) {
-            handleCollision(laser, space.getBombs());
+        for (Laser laser : gameObjects.getLasers()) {
+            handleCollision(laser, gameObjects.getBombs());
         }
     }
 
     private void handleBombSpaceShipCollisions() {
-        Spaceship spaceship = space.getSpaceShip();
+        Spaceship spaceship = gameObjects.getSpaceShip();
         if (spaceship != null) {
-            handleCollision(spaceship, space.getBombs());
+            handleCollision(spaceship, gameObjects.getBombs());
         }
     }
 
     private void handleCollision(GameObject gameObject, List<? extends GameObject> gameObjects) {
         for (GameObject o : gameObjects) {
             if (o.collidesWith(gameObject)) {
-                space.remove(o);
-                space.remove(gameObject);
+                this.gameObjects.remove(o);
+                this.gameObjects.remove(gameObject);
                 return;
             }
         }
     }
+
 }

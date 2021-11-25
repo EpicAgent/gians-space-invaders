@@ -10,11 +10,10 @@ import javafx.scene.input.KeyCode;
 
 public class GameOverScene extends BaseScene implements Initializable {
 
-    public GameOverScene(Navigator navigator) {
+    public GameOverScene(Navigator<SceneType> navigator) {
         super(navigator, Images.GAME_OVER_BACKGROUND);
-
         setOnKeyPressed(e -> {
-            if (e.getCode() == KeyCode.SPACE){
+            if (e.getCode() == KeyCode.SPACE) {
                 navigator.goTo(SceneType.WELCOME);
             }
         });
@@ -24,4 +23,5 @@ public class GameOverScene extends BaseScene implements Initializable {
     public void onInitialize() {
         Sound.play(SoundEffectType.SPACESHIP_EXPLODE);
     }
+
 }
