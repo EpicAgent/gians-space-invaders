@@ -159,4 +159,3 @@ public class BbcSpaceInvadersApp extends Application {
         }
     }
 }
-
