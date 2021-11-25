@@ -7,13 +7,15 @@ plugins {
 group 'ch.bbcag'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility = 17
+targetCompatibility = 17
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
 mainClassName = 'bbcspaceinvaders.main.Launcher'
@@ -23,10 +25,10 @@ javafx {
 }
 
 jar {
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
     manifest{
-        attributes 'Main-Class': 'bbcspaceinvaders.main.Launcher'
+        attributes 'Main-Class': 'ch.bbcag.ae.Launcher'
     }
-
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }

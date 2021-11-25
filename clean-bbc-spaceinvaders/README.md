@@ -8,7 +8,7 @@ Der Code zeigt die Verwendung der wichtigsten OOP Konzepte (Kapselung / Vererbun
 - Musik und Soundeffekte
 
 ## Verwendete Frameworks
-- Java SDK 13
+- Java SDK 17
 - [JavaFX][fx] als Desktop UI-Framework
 - Gradle als Build Tool
 
