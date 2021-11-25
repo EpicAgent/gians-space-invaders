@@ -1,0 +1,42 @@
+package bbcspaceinvaders.gui;
+
+import bbcspaceinvaders.common.BaseScene;
+import bbcspaceinvaders.common.FancyAnimationTimer;
+import bbcspaceinvaders.common.Initializable;
+import bbcspaceinvaders.common.Navigator;
+import bbcspaceinvaders.game.KeyEventHandler;
+import bbcspaceinvaders.game.MusicType;
+import bbcspaceinvaders.game.Sound;
+import bbcspaceinvaders.game.Space;
+
+public class GameScene extends BaseScene implements Initializable {
+
+    private FancyAnimationTimer gameLoop;
+
+    public GameScene(Navigator navigator){
+        super(navigator);
+    }
+
+    @Override
+    public void onInitialize() {
+
+        KeyEventHandler keyEventHandler = new KeyEventHandler();
+
+        this.setOnKeyPressed(keyEventHandler);
+        this.setOnKeyReleased(keyEventHandler);
+
+        Sound.play(MusicType.BACKGROUND);
+
+        Space space = new Space(keyEventHandler, navigator, () -> gameLoop.stop());
+        space.load();
+
+        gameLoop = new FancyAnimationTimer() {
+            @Override
+            public void doHandle(double deltaInSec) {
+            space.update(deltaInSec);
+            space.draw(canvas.getGraphicsContext2D());
+            }
+        };
+        gameLoop.start();
+    }
+}
