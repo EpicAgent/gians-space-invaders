@@ -2,18 +2,23 @@ package arraylist;
 
 import arraylist.interfaces.IIntList;
 import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Set;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LottoGeneratorTest {
 
     @Test
     void generateLottoNumbers_has_size_of_6() {
-        IIntList lottoNumbers = LottoGenerator.generateLottoNumbers();
-        assertEquals(6, lottoNumbers.size());
+        IIntList lottoNumbers;
+        boolean hasSizeOfSix = true;
+        for (int i = 0; i < 10000000; i++) {
+            lottoNumbers = LottoGenerator.generateLottoNumbers();
+            if (lottoNumbers.size() != 6) {
+                hasSizeOfSix = false;
+            }
+        }
+        assertTrue(hasSizeOfSix);
     }
 
     @Test
@@ -38,6 +43,4 @@ public class LottoGeneratorTest {
             }
         }
     }
-
-
 }
