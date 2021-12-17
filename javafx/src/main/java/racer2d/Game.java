@@ -2,6 +2,7 @@ package racer2d;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.CacheHint;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -30,6 +31,10 @@ public class Game extends Application {
     private static final int CANVAS_HEIGHT = 600;
     private static final int STREET_WIDTH = 300;
     private static final int LINE_WIDTH = 20;
+    private static final double MAX_DELTA_TIME = 0.016;
+    private static final Paint BACKGROUND = Paint.valueOf("#43CD7D");
+    private static final Paint STREET = Paint.valueOf("#bbbbaa");
+    private static final Paint LINE = Paint.valueOf("#ffffff");
 
 
     @Override
@@ -55,7 +60,8 @@ public class Game extends Application {
             @Override
             public void handle(long currentTime) {
                 update(currentTime);
-                paint();
+                Platform.runLater(() -> paint());
+
             }
         }.start();
 
@@ -71,19 +77,19 @@ public class Game extends Application {
 
     private void paint() {
         // Background
-        gc.setFill(Paint.valueOf("#43CD7D"));
+        gc.setFill(BACKGROUND);
         gc.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
         //Street
-        gc.setFill(Paint.valueOf("#bbbbaa"));
+        gc.setFill(STREET);
         gc.fillRect(250, 0, STREET_WIDTH, CANVAS_HEIGHT);
 
         //Line left
-        gc.setFill(Paint.valueOf("#ffffff"));
+        gc.setFill(LINE);
         gc.fillRect(270, 0, LINE_WIDTH, CANVAS_HEIGHT);
 
         //Line right
-        gc.setFill(Paint.valueOf("#ffffff"));
+        gc.setFill(LINE);
         gc.fillRect(510, 0, LINE_WIDTH, CANVAS_HEIGHT);
 
         gc.drawImage(carImage, x, y);
@@ -95,7 +101,9 @@ public class Game extends Application {
 
     private void update(long currentTime) {
         double deltaTime = (currentTime - lastTime) /1e9d;
-        //System.out.println(deltaTime);
+        if (deltaTime > MAX_DELTA_TIME) {
+            deltaTime = MAX_DELTA_TIME;
+        }
         lastTime = currentTime;
         if (inputLeft) {
             x -= carSpeed * deltaTime;
