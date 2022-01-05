@@ -46,7 +46,7 @@ public class Space {
             object.update(deltaInSec);
         }
         collisionHandler.handle();
-        if (gameObjects.hasSpaceShip()) {
+        if (!gameObjects.hasSpaceShip()) {
             navigator.goTo(SceneType.GAME_OVER);
             stop();
         } else if (gameObjects.getAlienShips().isEmpty()) {

@@ -13,7 +13,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class GameObjects extends CopyOnWriteArrayList<GameObject> {
 
     public boolean hasSpaceShip() {
-        return getAllObjectsFromType(Spaceship.class).isEmpty();
+        return !getAllObjectsFromType(Spaceship.class).isEmpty();
     }
 
     public Spaceship getSpaceShip() {
