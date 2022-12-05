@@ -125,8 +125,6 @@ public class BbcSpaceInvadersApp extends Application {
             spaceshipPosX = spaceshipPosX + distanceToMove;
         }
 
-        System.out.println(b);
-
         if (isLeftKeyPressed && spaceshipPosX > 0) {
             double distanceToMove = SPEED_OF_SPACESHIP * deltaInSec;
             spaceshipPosX = spaceshipPosX - distanceToMove;
