@@ -30,9 +30,9 @@ public class BbcSpaceInvadersApp extends Application {
     private boolean isLeftKeyPressed = false;
     private boolean isRightKeyPressed = false;
     private boolean isSpaceKeyPressed = false;
-    private List<Alienship> alienFleet = new CopyOnWriteArrayList<Alienship>();
-    private List<Bomb> bombs = new CopyOnWriteArrayList<Bomb>();
-    private List<Laser> laserShots = new ArrayList<Laser>();
+    private List<Alienship> alienFleet = new CopyOnWriteArrayList<>();
+    private List<Bomb> bombs = new CopyOnWriteArrayList<>();
+    private List<Laser> laserShots = new ArrayList<>();
     private double laserPower = 1.0;
 
     public static void main(String[] args) {
@@ -40,7 +40,7 @@ public class BbcSpaceInvadersApp extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage)  {
 
         lastTimeInNanoSec = System.nanoTime();
         new AnimationTimer() {
@@ -124,6 +124,9 @@ public class BbcSpaceInvadersApp extends Application {
             double distanceToMove = SPEED_OF_SPACESHIP * deltaInSec;
             spaceshipPosX = spaceshipPosX + distanceToMove;
         }
+
+        System.out.println(b);
+
         if (isLeftKeyPressed && spaceshipPosX > 0) {
             double distanceToMove = SPEED_OF_SPACESHIP * deltaInSec;
             spaceshipPosX = spaceshipPosX - distanceToMove;
@@ -141,7 +144,7 @@ public class BbcSpaceInvadersApp extends Application {
 
         laserPower += deltaInSec;
         if (isSpaceKeyPressed && laserPower > 1){
-            laserShots.add(new Laser(spaceshipPosX + 28, 380));
+            laserShots.add(new Laser(spaceshipPosX + spaceshipImage.getWidth() / 2, 380));
             laserPower -= 1;
         }
 
