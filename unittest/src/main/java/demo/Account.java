@@ -4,23 +4,23 @@ import java.math.BigDecimal;
 import java.math.MathContext;
 
 public class Account {
-    private BigDecimal balance = BigDecimal.valueOf(0);
-    private BigDecimal interestRate = BigDecimal.valueOf(0.01);
+    private double balance;
+    private double interestRate = 0.01;
 
     public static final String CURRENCY = "CHF";
 
 
-    public void deposit(BigDecimal amount) {
-        if (amount.compareTo(BigDecimal.valueOf(0)) > 0) {
-            balance = balance.add(amount);
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
         } else {
             throw new IllegalArgumentException("The amount has to be greather then 0 when depositing.");
         }
     }
 
-    public void withdraw(BigDecimal amount) {
-        if (amount.compareTo(BigDecimal.valueOf(0)) > 0) {
-            balance = balance.subtract(amount);
+    public void withdraw(double amount) {
+        if (amount > 0) {
+            balance += amount;
         } else {
             throw new IllegalArgumentException("The amount has to be greather then 0 when withdrawing.");
         }
@@ -31,33 +31,32 @@ public class Account {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Balance: ");
-        //stringBuilder.append(Math.round(20 * balance) / 20d); // rounding on 5 cents
-        stringBuilder.append(balance.multiply(BigDecimal.valueOf(20)).round(new MathContext(1)).divide(BigDecimal.valueOf(20)));
+        stringBuilder.append(Math.round(20 * balance) / 20d); // rounding on 5 cents
         stringBuilder.append(" ");
         stringBuilder.append(CURRENCY);
         return stringBuilder.toString();
     }
 
-    public BigDecimal getInterest() {
-        return interestRate.multiply(balance);
+    public double getInterest() {
+        return interestRate * balance;
     }
 
-    public BigDecimal getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public BigDecimal getInterestRate() {
+    public double getInterestRate() {
         return interestRate;
     }
 
-    public void setInterestRate(BigDecimal interestRate) {
+    public void setInterestRate(double interestRate) {
         this.interestRate = interestRate;
     }
 
     public static Account getAccountWithMaxBalance(Account[] accounts) {
         Account accountWithMaxBalance = accounts[0];
         for (Account account : accounts) {
-            if (account.getBalance().compareTo(accountWithMaxBalance.getBalance()) > 0) {
+            if (account.getBalance() > accountWithMaxBalance.getBalance()) {
                 accountWithMaxBalance = account;
             }
         }

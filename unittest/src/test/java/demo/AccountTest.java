@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigDecimal;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AccountTest {
@@ -26,26 +24,26 @@ public class AccountTest {
 
     @Test
     void when_deposit_100_and_200_then_the_result_is_300() {
-        testee.deposit(BigDecimal.valueOf(100));
-        testee.deposit(BigDecimal.valueOf(200));
+        testee.deposit(100);
+        testee.deposit(200);
 
-        BigDecimal actual = testee.getBalance();
-        assertEquals( true, actual.compareTo(BigDecimal.valueOf(300)) == 0);
+        double actual = testee.getBalance();
+        assertEquals( 300, actual);
     }
 
     @Test
     void when_deposit_100_and_withdraw_50_then_the_result_is_50() {
-        testee.deposit(BigDecimal.valueOf(100));
-        testee.withdraw(BigDecimal.valueOf(50));
+        testee.deposit(100);
+        testee.withdraw(50);
 
-        BigDecimal actual = testee.getBalance();
-        assertEquals( true, actual.compareTo(BigDecimal.valueOf(50)) == 0);
+        double actual = testee.getBalance();
+        assertEquals( 50, actual);
     }
 
     @Test
     void when_withdraw_a_negative_amount_then_an_IllegalArgumentException_is_thrown() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            testee.withdraw(BigDecimal.valueOf(-1));
+            testee.withdraw(-1);
         });
     }
 }
