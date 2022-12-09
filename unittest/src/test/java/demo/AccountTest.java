@@ -1,9 +1,6 @@
 package demo;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -29,6 +26,15 @@ public class AccountTest {
 
         double actual = testee.getBalance();
         assertEquals( 300, actual);
+    }
+
+    @Test
+    @Disabled
+    void when_deposit_zero_dot_one_and_zero_dot_two_then_result_is_zero_dot_three() {
+        testee.deposit(0.1);
+        testee.deposit(0.2);
+        double actual = testee.getBalance();
+        assertEquals(0.3, actual);
     }
 
     @Test
