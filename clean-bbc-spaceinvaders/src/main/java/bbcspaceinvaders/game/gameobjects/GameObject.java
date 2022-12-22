@@ -32,8 +32,8 @@ public abstract class GameObject {
         return new BoundingBox(this.x, this.y, image.getWidth(), image.getHeight());
     }
 
-    public boolean collidesWith(GameObject e) {
-        return getBoundingBox().intersects(e.getBoundingBox());
+    public boolean collidesWith(GameObject otherGameObject) {
+        return getBoundingBox().intersects(otherGameObject.getBoundingBox());
     }
 
     public abstract void update(double deltaInSec);
