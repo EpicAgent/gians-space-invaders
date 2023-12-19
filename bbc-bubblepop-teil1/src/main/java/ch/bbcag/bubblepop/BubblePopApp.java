@@ -112,8 +112,8 @@ public class BubblePopApp extends Application {
         gc.setFill(Color.WHITE);
         gc.fillRect(paddleX, 580, paddleWidth, paddleHeight);
 
+        gc.setFill(Color.RED);
         for (Bubble bubble : bubbles) {
-            gc.setFill(Color.RED);
             gc.fillOval(bubble.getX(), bubble.getY(), bubble.getSize(), bubble.getSize());
         }
 
@@ -123,20 +123,24 @@ public class BubblePopApp extends Application {
     }
 
     private void onKeyReleased(KeyEvent e) {
-        if (e.getCode() == KeyCode.LEFT) {
-            isLeftKeyPressed = false;
-        }
-        if (e.getCode() == KeyCode.RIGHT) {
-            isRightKeyPressed = false;
+        switch (e.getCode()) {
+            case KeyCode.LEFT:
+                isLeftKeyPressed = false;
+                break;
+            case KeyCode.RIGHT:
+                isRightKeyPressed = false;
+                break;
         }
     }
 
     private void onKeyPressed(KeyEvent e) {
-        if (e.getCode() == KeyCode.LEFT) {
-            isLeftKeyPressed = true;
-        }
-        if (e.getCode() == KeyCode.RIGHT) {
-            isRightKeyPressed = true;
+        switch (e.getCode()) {
+            case KeyCode.LEFT:
+                isLeftKeyPressed = true;
+                break;
+            case KeyCode.RIGHT:
+                isRightKeyPressed = true;
+                break;
         }
     }
 }
