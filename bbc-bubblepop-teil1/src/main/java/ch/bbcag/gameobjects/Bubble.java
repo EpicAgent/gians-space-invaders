@@ -3,6 +3,7 @@ package ch.bbcag.gameobjects;
 public class Bubble {
     private double x, y;
     private final double size = 20;
+    private static final double SPEED = 100;
 
     public Bubble(double x, double y) {
         this.x = x;
@@ -10,7 +11,8 @@ public class Bubble {
     }
 
     public void update(double deltaInSec) {
-        y += deltaInSec;
+        double distanceToMove = SPEED * deltaInSec;
+        y += distanceToMove;
     }
 
     public double getX() {
