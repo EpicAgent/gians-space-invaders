@@ -7,7 +7,6 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -24,8 +23,8 @@ public class BubblePopApp extends Application {
     // Instanzvariable
     private long lastTimeInNanoSec;
 
-    // Wir wollen das Spaceship 100 Pixel in der Sekunde bewegen.
-    private static final double SPEED = 100;
+    // Wir wollen das Paddel 150 Pixel in der Sekunde bewegen.
+    private static final double SPEED = 150;
     private double paddleX = 200;
     private double paddleHeight = 20;
     private double paddleWidth = 100;
@@ -86,15 +85,15 @@ public class BubblePopApp extends Application {
             paddleX += distanceToMove;
         }
 
-        if (random.nextDouble() < 0.02) {
+        if (random.nextDouble() < 0.01) {
             bubbles.add(new Bubble(random.nextDouble() * (canvas.getWidth() - 20), 30));
         }
 
         for (Bubble bubble : bubbles) {
             bubble.update(deltaInSec);
 
-            if (bubble.getY() >= canvas.getHeight() - paddleHeight - bubble.getSize() &&
-                    bubble.getX() >= paddleX &&
+            if (bubble.getY() >= canvas.getHeight() - paddleHeight - bubble.getDiameter() &&
+                    bubble.getX() + bubble.getDiameter() >= paddleX &&
                     bubble.getX() <= paddleX + paddleWidth) {
                 bubbles.remove(bubble);
                 score++;
@@ -114,7 +113,7 @@ public class BubblePopApp extends Application {
 
         gc.setFill(Color.RED);
         for (Bubble bubble : bubbles) {
-            gc.fillOval(bubble.getX(), bubble.getY(), bubble.getSize(), bubble.getSize());
+            gc.fillOval(bubble.getX(), bubble.getY(), bubble.getDiameter(), bubble.getDiameter());
         }
 
         gc.setFill(Color.WHITE);

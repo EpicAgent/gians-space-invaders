@@ -2,7 +2,7 @@ package ch.bbcag.gameobjects;
 
 public class Bubble {
     private double x, y;
-    private final double size = 20;
+    private final double DIAMETER = 20;
     private static final double SPEED = 100;
 
     public Bubble(double x, double y) {
@@ -23,7 +23,7 @@ public class Bubble {
         return y;
     }
 
-    public double getSize() {
-        return size;
+    public double getDiameter() {
+        return DIAMETER;
     }
 }
