@@ -91,7 +91,7 @@ public class BubblePopApp extends Application {
         }
 
         for (Bubble bubble : bubbles) {
-            bubble.update(distanceToMove);
+            bubble.update(deltaInSec);
 
             if (bubble.getY() >= canvas.getHeight() - paddleHeight - bubble.getSize() &&
                     bubble.getX() >= paddleX &&
@@ -124,10 +124,10 @@ public class BubblePopApp extends Application {
 
     private void onKeyReleased(KeyEvent e) {
         switch (e.getCode()) {
-            case KeyCode.LEFT:
+            case LEFT:
                 isLeftKeyPressed = false;
                 break;
-            case KeyCode.RIGHT:
+            case RIGHT:
                 isRightKeyPressed = false;
                 break;
         }
@@ -135,10 +135,10 @@ public class BubblePopApp extends Application {
 
     private void onKeyPressed(KeyEvent e) {
         switch (e.getCode()) {
-            case KeyCode.LEFT:
+            case LEFT:
                 isLeftKeyPressed = true;
                 break;
-            case KeyCode.RIGHT:
+            case RIGHT:
                 isRightKeyPressed = true;
                 break;
         }
