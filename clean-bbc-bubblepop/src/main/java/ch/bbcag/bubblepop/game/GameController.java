@@ -47,7 +47,7 @@ public class GameController {
 
         paddle.update(deltaInSec);
 
-        if (random.nextDouble() < Const.BUUBBLE_SPAWN_PROBABILITY) {
+        if (random.nextDouble() < Const.BUBBLE_SPAWN_PROBABILITY) {
             bubbles.add(new Bubble(random.nextDouble() * (Const.SCREEN_WIDTH - Bubble.DIAMETER), Const.BUBBLE_SPAWN_Y));
         }
 

@@ -8,6 +8,6 @@ public class Const {
     public static final int PADDLE_START_X = 200;
     public static final int PADDLE_Y = 580;
     public static final int WIN_SCORE = 30;
-    public static final double BUUBBLE_SPAWN_PROBABILITY = 0.01;
+    public static final double BUBBLE_SPAWN_PROBABILITY = 0.01;
     public static final int BUBBLE_SPAWN_Y = 30;
 }
