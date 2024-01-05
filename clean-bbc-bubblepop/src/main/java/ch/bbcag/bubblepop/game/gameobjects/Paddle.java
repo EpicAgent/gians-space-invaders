@@ -8,7 +8,7 @@ import static ch.bbcag.bubblepop.Const.*;
 
 public class Paddle extends GameObject {
     private final KeyEventHandler keyEventHandler;
-    public double speed = 100;
+    public final double SPEED = 150;
 
     public Paddle(double x, double y, KeyEventHandler keyEventHandler) {
         super(x,y);
@@ -27,7 +27,7 @@ public class Paddle extends GameObject {
     }
 
     private void handleNavigationEvents(double deltaInSec) {
-        double distanceToMove = speed * deltaInSec;
+        double distanceToMove = SPEED * deltaInSec;
 
         if (keyEventHandler.isLeftKeyPressed() && x > 0) {
             x -= distanceToMove;

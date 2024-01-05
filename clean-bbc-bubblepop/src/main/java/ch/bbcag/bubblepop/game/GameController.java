@@ -16,17 +16,17 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import static ch.bbcag.bubblepop.Const.PADDLE_HEIGHT;
 import static ch.bbcag.bubblepop.Const.PADDLE_WIDTH;
 
-public class Controller {
+public class GameController {
     private final List<Bubble> bubbles;
     private final Navigator<SceneType> navigator;
     private final Runnable gameLoopStopper;
-    private KeyEventHandler keyEventHandler;
-    private Random random;
+    private final KeyEventHandler keyEventHandler;
+    private final Random random;
     private Paddle paddle;
 
     private int score;
 
-    public Controller(KeyEventHandler keyEventHandler, Navigator<SceneType> navigator, Runnable gameLoopStopper) {
+    public GameController(KeyEventHandler keyEventHandler, Navigator<SceneType> navigator, Runnable gameLoopStopper) {
         this.keyEventHandler = keyEventHandler;
         this.navigator = navigator;
         this.bubbles = new CopyOnWriteArrayList<>();
@@ -35,27 +35,27 @@ public class Controller {
     }
 
     public void load() {
-        this.paddle = new Paddle(200, 580, keyEventHandler);
+        this.paddle = new Paddle(Const.PADDLE_START_X, Const.PADDLE_Y, keyEventHandler);
         this.score = 0;
     }
 
     public void update(double deltaInSec) {
-        if (score >= 40) {
+        if (score >= Const.WIN_SCORE) {
             navigator.goTo(SceneType.GAME_WON);
             stop();
         }
 
         paddle.update(deltaInSec);
 
-        if (random.nextDouble() < 0.02) {
-            bubbles.add(new Bubble(random.nextDouble() * (Const.SCREEN_WIDTH - 20), 30));
+        if (random.nextDouble() < Const.BUUBBLE_SPAWN_PROBABILITY) {
+            bubbles.add(new Bubble(random.nextDouble() * (Const.SCREEN_WIDTH - Bubble.DIAMETER), Const.BUBBLE_SPAWN_Y));
         }
 
         for (Bubble bubble : bubbles) {
             bubble.update(deltaInSec);
 
-            if (bubble.getY() >= Const.SCREEN_HEIGHT - PADDLE_HEIGHT - bubble.getSize() &&
-                    bubble.getX() >= paddle.getX() &&
+            if (bubble.getY() >= Const.SCREEN_HEIGHT - PADDLE_HEIGHT - bubble.getDiameter() &&
+                    bubble.getX() + bubble.getDiameter() >= paddle.getX() &&
                     bubble.getX() <= paddle.getX() + PADDLE_WIDTH) {
                 bubbles.remove(bubble);
                 score++;
@@ -77,8 +77,8 @@ public class Controller {
         }
 
         gc.setFill(Color.WHITE);
-        gc.setFont(new Font(20));
-        gc.fillText("Score: " + score, 10, 20);
+        gc.setFont(new Font(20)); //fontsize
+        gc.fillText("Score: " + score, 10, 20); //margins
     }
 
     private void stop() {

@@ -4,7 +4,7 @@ import ch.bbcag.bubblepop.common.BaseScene;
 import ch.bbcag.bubblepop.common.FancyAnimationTimer;
 import ch.bbcag.bubblepop.common.Initializable;
 import ch.bbcag.bubblepop.common.Navigator;
-import ch.bbcag.bubblepop.game.Controller;
+import ch.bbcag.bubblepop.game.GameController;
 import ch.bbcag.bubblepop.game.KeyEventHandler;
 
 public class GameScene extends BaseScene implements Initializable {
@@ -23,7 +23,7 @@ public class GameScene extends BaseScene implements Initializable {
         this.setOnKeyPressed(keyEventHandler);
         this.setOnKeyReleased(keyEventHandler);
 
-        Controller controller = new Controller(keyEventHandler, navigator, () -> gameLoop.stop());
+        GameController controller = new GameController(keyEventHandler, navigator, () -> gameLoop.stop());
         controller.load();
 
         gameLoop = new FancyAnimationTimer() {

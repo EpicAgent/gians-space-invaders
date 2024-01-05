@@ -6,27 +6,27 @@ import javafx.stage.Stage;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Navigator<T> {
+public class Navigator<sceneKey> {
 
     private final Stage stage;
-    private final Map<T, Scene> viewMap = new HashMap<>();
+    private final Map<sceneKey, Scene> viewMap = new HashMap<>();
 
     public Navigator(Stage stage) {
         this.stage = stage;
     }
 
-    public void registerScene(T enumScene, Scene scene) {
+    public void registerScene(sceneKey enumScene, Scene scene) {
         viewMap.put(enumScene, scene);
     }
 
-    public void goTo(T scene) {
-        Scene activeScene = viewMap.get(scene);
+    public void goTo(sceneKey sceneKey) {
+        Scene targetScene = viewMap.get(sceneKey);
 
-        if (activeScene instanceof Initializable) {
-            ((Initializable) activeScene).onInitialize();
+        if (targetScene instanceof Initializable) {
+            ((Initializable) targetScene).onInitialize();
         }
 
-        stage.setScene(activeScene);
+        stage.setScene(targetScene);
     }
 
 }

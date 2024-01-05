@@ -4,8 +4,8 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
 public class Bubble extends GameObject {
-    private final static double speed = 100;
-    private final double size = 20;
+    private final static double SPEED = 100;
+    public static final double DIAMETER = 20;
 
     public Bubble(double x, double y) {
         super(x,y);
@@ -13,7 +13,7 @@ public class Bubble extends GameObject {
 
     @Override
     public void update(double deltaInSec) {
-        double distanceToMove = speed * deltaInSec;
+        double distanceToMove = SPEED * deltaInSec;
 
         y += distanceToMove;
     }
@@ -21,10 +21,10 @@ public class Bubble extends GameObject {
     @Override
     public void draw(GraphicsContext gc) {
         gc.setFill(Color.RED);
-        gc.fillOval(x, y, size, size);
+        gc.fillOval(x, y, getDiameter(), getDiameter());
     }
 
-    public double getSize() {
-        return size;
+    public double getDiameter() {
+        return DIAMETER;
     }
 }
