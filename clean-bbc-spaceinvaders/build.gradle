@@ -1,21 +1,23 @@
 plugins {
     id 'java'
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
 }
 
 group 'ch.bbcag'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 17
-targetCompatibility = 17
+java {
+    sourceCompatibility = 21
+    targetCompatibility = 21
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }
 
 mainClassName = 'bbcspaceinvaders.main.Launcher'

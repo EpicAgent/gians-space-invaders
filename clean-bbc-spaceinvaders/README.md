@@ -8,7 +8,7 @@ Der Code zeigt die Verwendung der wichtigsten OOP Konzepte (Kapselung / Vererbun
 - Musik und Soundeffekte
 
 ## Verwendete Frameworks
-- Java SDK 17
+- Java SDK 21
 - [JavaFX][fx] als Desktop UI-Framework
 - Gradle als Build Tool
 
@@ -20,7 +20,7 @@ Der JavaFX UI Code wurde zu grossen Teilen vom Gamecode entkoppelt.
 Der Business Code im Order Game sollte keine Abhängigkeiten zu Java FX Packages enthalten.
 
 ### Installation
-Der Code wurde mit Java SDK 13 und Java FX 12.0.1 getestet.
+Der Code wurde mit Java SDK 21 und Java FX 16 getestet.
 ```sh
 $ git clone https:/.../clean-bbc-spaceinvaders.git
 $ java -jar \build\lib\clean-bbc-spaceinvaders-1.0-SNAPSHOT.jar
