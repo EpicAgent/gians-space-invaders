@@ -46,9 +46,6 @@ public class Sound {
         return switch (soundEffect) {
             case LASER_FIRED -> "laser_fired.wav";
             case SPACESHIP_EXPLODE -> "explode_spaceship.wav";
-            default -> throw new RuntimeException(
-                    "No Soundfilename set for this enum value: " + soundEffect
-            );
         };
     }
 
@@ -56,9 +53,6 @@ public class Sound {
         return switch (music) {
             case BACKGROUND -> "music_ingame.wav";
             case INTRO -> "music_startscreen.wav";
-            default -> throw new RuntimeException(
-                    "No Soundfilename set for this enum value: " + music
-            );
         };
     }
 }
