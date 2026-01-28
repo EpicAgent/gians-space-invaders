@@ -43,25 +43,22 @@ public class Sound {
     }
 
     private static String getSoundFileName(SoundEffectType soundEffect) {
-        switch (soundEffect) {
-            case LASER_FIRED:
-                return "laser_fired.wav";
-            case SPACESHIP_EXPLODE:
-                return "explode_spaceship.wav";
-            default:
-                throw new RuntimeException("No Soundfilename set for this enum value:" + soundEffect);
-        }
+        return switch (soundEffect) {
+            case LASER_FIRED -> "laser_fired.wav";
+            case SPACESHIP_EXPLODE -> "explode_spaceship.wav";
+            default -> throw new RuntimeException(
+                    "No Soundfilename set for this enum value: " + soundEffect
+            );
+        };
     }
 
     private static String getSoundFileName(MusicType music) {
-        switch (music) {
-            case BACKGROUND:
-                return "music_ingame.wav";
-            case INTRO:
-                return "music_startscreen.wav";
-            default:
-                throw new RuntimeException("No Soundfilename set for this enum value:" + music);
-        }
+        return switch (music) {
+            case BACKGROUND -> "music_ingame.wav";
+            case INTRO -> "music_startscreen.wav";
+            default -> throw new RuntimeException(
+                    "No Soundfilename set for this enum value: " + music
+            );
+        };
     }
-
 }

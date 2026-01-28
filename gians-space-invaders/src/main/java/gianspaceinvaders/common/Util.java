@@ -7,7 +7,7 @@ public class Util {
 
     @SuppressWarnings("unchecked")
     public static <T> List<T> getAllObjectsFromType(Class<T> classToFind, List<?> list) {
-        List<T> resultList = new ArrayList<T>();
+        List<T> resultList = new ArrayList<>();
         for (Object o : list) {
             if (classToFind.equals(o.getClass()))
                 resultList.add((T) o);
