@@ -1,6 +1,8 @@
 package bbcspaceinvaders.game.gameobjects;
 
+import bbcspaceinvaders.Const;
 import bbcspaceinvaders.Direction;
+import bbcspaceinvaders.Images;
 import javafx.geometry.BoundingBox;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -8,27 +10,18 @@ import javafx.scene.image.Image;
 
 import java.util.List;
 
-public class Alienship {
+public class Alienship extends GameObject {
 
     private static final double SPEED = 100;
-    private double x;
-    private double y;
-    private final Canvas canvas;
-    private List<Bomb> bombs;
-    private Image image = new Image(this.getClass().getResourceAsStream("/alienship.png"));
-    private Direction direction = Direction.RIGHT;
+        private Direction direction = Direction.RIGHT;
 
-    public Alienship(double x, double y, Canvas canvas, List<Bomb> bombs) {
-        this.x = x;
-        this.y = y;
-        this.canvas = canvas;
-        this.bombs = bombs;
+    public Alienship(double x, double y) {
+        super(x, y, Images.ALIEN);
     }
 
     public void update(double deltaInSec) {
         changeDirectionIfNeeded();
         moveInCurrentDirection(deltaInSec);
-        throwBombs();
     }
 
     private void moveInCurrentDirection(double deltaTimeInSec) {
@@ -41,7 +34,7 @@ public class Alienship {
     }
 
     private void changeDirectionIfNeeded() {
-        if (x + image.getWidth() > canvas.getWidth()) {
+        if (x + IMG.getWidth() > Const.SCREEN_WIDTH) {
             direction = Direction.LEFT;
         }
         if (x < 0) {
@@ -49,17 +42,9 @@ public class Alienship {
         }
     }
 
-    private void throwBombs() {
-        if (Math.random() < 0.02) {
-            bombs.add(new Bomb(this.getBoundingBox().getCenterX(), this.getBoundingBox().getMaxY()));
-        }
-    }
 
-    public void draw(GraphicsContext gc) {
-        gc.drawImage(image, x, y);
-    }
 
-    public BoundingBox getBoundingBox() {
-        return new BoundingBox(this.x, this.y, image.getWidth(), image.getHeight());
-    }
+
+
+
 }
