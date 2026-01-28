@@ -17,7 +17,11 @@ public class GameObjects extends CopyOnWriteArrayList<GameObject> {
     }
 
     public Spaceship getSpaceShip() {
-        return getAllObjectsFromType(Spaceship.class).getFirst();
+        if (hasSpaceShip()) {
+            return getAllObjectsFromType(Spaceship.class).getFirst();
+        } else {
+            return null;
+        }
     }
 
     public List<Alienship> getAlienShips() {
