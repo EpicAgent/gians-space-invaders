@@ -1,5 +1,6 @@
 package gianspaceinvaders.game;
 
+import gianspaceinvaders.game.gameobjects.Alienship;
 import gianspaceinvaders.game.gameobjects.GameObject;
 import gianspaceinvaders.game.gameobjects.Laser;
 import gianspaceinvaders.game.gameobjects.Spaceship;
@@ -42,6 +43,9 @@ public class CollisionHandler {
     private void handleCollision(GameObject gameObject, List<? extends GameObject> gameObjects) {
         for (GameObject o : gameObjects) {
             if (o.collidesWith(gameObject)) {
+                if (gameObject instanceof Laser) {
+                    Sound.play(SoundEffectType.ALIENSHIP_EXPLODE);
+                }
                 this.gameObjects.remove(o);
                 this.gameObjects.remove(gameObject);
                 return;

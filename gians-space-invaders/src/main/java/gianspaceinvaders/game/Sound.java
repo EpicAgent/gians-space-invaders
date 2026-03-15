@@ -46,6 +46,7 @@ public class Sound {
         return switch (soundEffect) {
             case LASER_FIRED -> "laser_fired.wav";
             case SPACESHIP_EXPLODE -> "explode_spaceship.wav";
+            case ALIENSHIP_EXPLODE -> "explode_alienship.wav";
         };
     }
 

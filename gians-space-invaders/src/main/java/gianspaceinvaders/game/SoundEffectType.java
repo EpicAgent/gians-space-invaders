@@ -3,6 +3,7 @@ package gianspaceinvaders.game;
 public enum SoundEffectType {
 
     SPACESHIP_EXPLODE,
-    LASER_FIRED
+    LASER_FIRED,
+    ALIENSHIP_EXPLODE
 
 }
