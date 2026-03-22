@@ -45,6 +45,9 @@ Als Benutzer möchte ich …
 ### Mockup
 ![Mockups](src/documentation/Mockup.png)
 
+### Dokumentation
+[Projekt Dokumentation](src/documentation/Projekt.pdf)
+
 ### Achitektur
 ![Classdiagram](src/documentation/Class_diagram.png)
 Der JavaFX UI Code wurde zu grossen Teilen vom Gamecode entkoppelt.
