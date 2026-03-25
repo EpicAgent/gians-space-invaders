@@ -1,6 +1,5 @@
 package gianspaceinvaders.common;
 
-import gianspaceinvaders.game.Const;
 import gianspaceinvaders.gui.SceneType;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -16,7 +15,7 @@ public abstract class BaseScene extends Scene {
     public BaseScene(Navigator<SceneType> navigator) {
         super(new Group());
         this.navigator = navigator;
-        canvas = new Canvas(Const.SCREEN_WIDTH, Const.SCREEN_HEIGHT);
+        canvas = new Canvas(Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT);
         ((Group) getRoot()).getChildren().add(canvas);
     }
 

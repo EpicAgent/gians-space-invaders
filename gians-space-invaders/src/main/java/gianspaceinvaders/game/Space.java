@@ -1,5 +1,6 @@
 package gianspaceinvaders.game;
 
+import gianspaceinvaders.common.Config;
 import gianspaceinvaders.common.Navigator;
 import gianspaceinvaders.game.gameobjects.Alienship;
 import gianspaceinvaders.game.gameobjects.GameObject;
@@ -34,7 +35,7 @@ public class Space {
     }
 
     public void draw(GraphicsContext gc) {
-        gc.clearRect(0, 0, Const.SCREEN_WIDTH, Const.SCREEN_HEIGHT);
+        gc.clearRect(0, 0, Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT);
         gc.drawImage(Images.GAME_BACKGROUND, 0, 0);
         for (GameObject object : gameObjects) {
             object.draw(gc);

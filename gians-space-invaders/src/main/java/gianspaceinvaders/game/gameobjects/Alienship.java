@@ -1,13 +1,12 @@
 package gianspaceinvaders.game.gameobjects;
 
-import gianspaceinvaders.game.Const;
+import gianspaceinvaders.common.Config;
 import gianspaceinvaders.game.GameObjects;
 import gianspaceinvaders.game.Images;
 
 public class Alienship extends GameObject {
 
-    private final static double SPEED = 100;
-    private final static double BOMB_DROP_CHANCE = 0.2;
+
     private final GameObjects gameObjects;
     private Direction direction = Direction.RIGHT;
 
@@ -24,13 +23,13 @@ public class Alienship extends GameObject {
     }
 
     private void dropBomb(double deltaInSec) {
-        if (Math.random() < deltaInSec * BOMB_DROP_CHANCE) {
+        if (Math.random() < deltaInSec * Config.BOMB_DROP_CHANCE) {
             gameObjects.add(new Bomb(getBoundingBox().getCenterX(), getBoundingBox().getMaxY()));
         }
     }
 
     private void moveInCurrentDirection(double deltaTimeInSec) {
-        double distanceToMove = SPEED * deltaTimeInSec;
+        double distanceToMove = Config.ALIENSHIP_SPEED * deltaTimeInSec;
 
         if (direction == Direction.RIGHT) {
             x += distanceToMove;
@@ -40,7 +39,7 @@ public class Alienship extends GameObject {
     }
 
     private void changeDirectionIfNeeded() {
-        if (getX() + getImage().getWidth() > Const.SCREEN_WIDTH) {
+        if (getX() + getImage().getWidth() > Config.SCREEN_WIDTH) {
             direction = Direction.LEFT;
         }
         if (getX() < 0) {

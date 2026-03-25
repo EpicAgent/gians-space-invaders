@@ -1,10 +1,9 @@
 package gianspaceinvaders.game.gameobjects;
 
+import gianspaceinvaders.common.Config;
 import gianspaceinvaders.game.Images;
 
 public class Laser extends GameObject {
-
-    private final static double SPEED = 100;
 
     public Laser(double x, double y) {
         super(x, y, Images.LASER);
@@ -12,7 +11,7 @@ public class Laser extends GameObject {
 
     @Override
     public void update(double deltaInSec) {
-        y -= SPEED * deltaInSec;
+        y -= Config.LASER_SPEED * deltaInSec;
     }
 
 }

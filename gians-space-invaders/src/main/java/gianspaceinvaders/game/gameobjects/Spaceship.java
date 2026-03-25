@@ -1,6 +1,6 @@
 package gianspaceinvaders.game.gameobjects;
 
-import gianspaceinvaders.game.Const;
+import gianspaceinvaders.common.Config;
 import gianspaceinvaders.game.GameObjects;
 import gianspaceinvaders.game.Images;
 import gianspaceinvaders.game.KeyEventHandler;
@@ -9,7 +9,6 @@ import gianspaceinvaders.game.SoundEffectType;
 
 public class Spaceship extends GameObject {
 
-    private final static double SPEED = 100;
     private final static double SHIP_Y = 480;
     private final static double LASER_SHOT_TIME = 1;
     private final KeyEventHandler keyEventHandler;
@@ -17,7 +16,7 @@ public class Spaceship extends GameObject {
     private double shipBattery = 1;
 
     public Spaceship(KeyEventHandler keyEventHandler, GameObjects gameObjects) {
-        super(Const.SCREEN_WIDTH / 2, SHIP_Y, Images.SPACE_SHIP);
+        super(Config.SCREEN_WIDTH / 2, SHIP_Y, Images.SPACE_SHIP);
         this.keyEventHandler = keyEventHandler;
         this.gameObjects = gameObjects;
     }
@@ -30,9 +29,9 @@ public class Spaceship extends GameObject {
 
     private void handleNavigationEvents(double deltaInSec) {
 
-        double distanceToMove = SPEED * deltaInSec;
+        double distanceToMove = Config.SPACESHIP_SPEED * deltaInSec;
 
-        if (keyEventHandler.isRightKeyPressed() && getX() < Const.SCREEN_WIDTH - getImage().getWidth())
+        if (keyEventHandler.isRightKeyPressed() && getX() < Config.SCREEN_WIDTH - getImage().getWidth())
             x += distanceToMove;
         if (keyEventHandler.isLeftKeyPressed() && getX() > 0)
             x -= distanceToMove;
